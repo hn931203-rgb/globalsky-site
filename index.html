@@ -155,7 +155,13 @@
   .hero { position:relative; overflow:hidden; background:linear-gradient(180deg, var(--sky-deep), var(--sky)); padding-top:clamp(48px,7vw,84px); padding-bottom:clamp(64px,9vw,110px); }
   #view-consulting { position:relative; }
   #view-consulting::before { content:""; position:absolute; top:0; left:0; right:0; height:8px; background:linear-gradient(90deg, #7A1F1F, #B5453D); z-index:0; }
-  #view-camp { position:relative; }
+  #view-camp, #view-tutoring, #view-study-abroad { position:relative; }
+  #view-tutoring::before { content:""; position:absolute; top:0; left:0; right:0; height:420px; background-image:url('images/camp-life-2.png'); background-size:cover; background-position:center 30%; opacity:.35; filter:blur(1.5px); z-index:0; }
+  #view-tutoring::after { content:""; position:absolute; top:0; left:0; right:0; height:420px; background:linear-gradient(180deg, color-mix(in srgb, var(--bg) 25%, transparent), var(--bg) 96%); z-index:0; }
+  #view-tutoring > .wrap { position:relative; z-index:1; }
+  #view-study-abroad::before { content:""; position:absolute; top:0; left:0; right:0; height:420px; background-image:url('images/nz2.png'); background-size:cover; background-position:center 35%; opacity:.35; filter:blur(1.5px); z-index:0; }
+  #view-study-abroad::after { content:""; position:absolute; top:0; left:0; right:0; height:420px; background:linear-gradient(180deg, color-mix(in srgb, var(--bg) 25%, transparent), var(--bg) 96%); z-index:0; }
+  #view-study-abroad > .wrap { position:relative; z-index:1; }
   #view-camp::before { content:""; position:absolute; top:0; left:0; right:0; height:520px; background-image:url('images/camp-life-3.png'); background-size:cover; background-position:center 25%; opacity:.4; filter:blur(1.5px); z-index:0; }
   #view-camp::after { content:""; position:absolute; top:0; left:0; right:0; height:520px; background:linear-gradient(180deg, color-mix(in srgb, var(--bg) 30%, transparent), var(--bg) 96%); z-index:0; }
   #view-camp > .wrap { position:relative; z-index:1; }
