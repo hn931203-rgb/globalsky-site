@@ -282,6 +282,13 @@
   .pop-card p { margin-top:8px; color:var(--ink); font-weight:600; font-size:.92rem; }
   .pop-card.dashed { border-style:dashed; }
   .pop-card .tag-sm { font-family:var(--font-display); font-weight:700; font-size:.76rem; letter-spacing:.04em; color:var(--ink-muted); }
+  .review-card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:20px; }
+  .review-card > .tag-sm { font-family:var(--font-display); font-weight:700; font-size:.72rem; letter-spacing:.04em; color:var(--pink); text-transform:uppercase; }
+  .review-card h3 { font-size:1.02rem; margin-top:10px; }
+  .review-card .rv-meta { margin-top:8px; font-size:.82rem; color:var(--ink-faint); font-weight:600; }
+  .review-card .rv-body { margin-top:10px; font-size:.92rem; color:var(--ink-muted); }
+  .review-card .rv-quote { margin:12px 0 0; padding:10px 14px; background:var(--sky-wash); border-left:3px solid var(--pink); border-radius:0 8px 8px 0; font-size:.9rem; font-style:italic; color:var(--ink); }
+  .review-card .rv-result { margin-top:12px; font-size:.86rem; font-weight:700; color:var(--sky-deep); }
 
   .fact-card { border:2px solid var(--border-strong); border-radius:18px; background:var(--card-yellow); padding:26px; }
   .fact-card h3 { font-size:1.15rem; }
@@ -469,11 +476,40 @@
         <h2>이슈 &amp; 후기</h2>
         <p class="desc">유학·국제학교 준비 과정에서 자주 발생하는 이슈를 안내해 드리고, 실제 상담을 진행하신 학부모님들의 후기도 순차적으로 이곳에 정리해 드립니다.</p>
       </div>
-      <div class="card-grid cols-3">
+      <div class="cat-label">이슈</div>
+      <div class="card-grid cols-2" style="margin-bottom:36px;">
         <div class="pop-card"><span class="tag-sm">Issue</span><h3>2027 겨울캠프, 선착순 모집 이벤트 진행 중입니다</h3><p>캐나다·뉴질랜드·일본·말레이시아·필리핀 캠프를 글로벌스카이를 통해 상담·등록하실 수 있습니다.</p></div>
         <div class="pop-card"><span class="tag-sm">Issue</span><h3>국제학교 편입, 학교별 일정 확인이 먼저입니다</h3><p>국제학교는 학교마다 편입 가능 시기와 정원이 다릅니다. 목표 학교의 학사 일정을 먼저 확인한 뒤 준비 계획을 세워야 합니다.</p></div>
-        <div class="pop-card dashed"><span class="tag-sm">Review</span><h3>상담 후기, 준비 중입니다</h3><p>실제 상담을 진행하신 학부모님들의 후기를 순차적으로 업데이트할 예정입니다. 조금만 기다려 주세요.</p></div>
       </div>
+
+      <div class="cat-label">학부모 후기</div>
+      <div class="card-grid cols-3">
+        <div class="review-card">
+          <span class="tag-sm">Review · 국제학교 입학 인터뷰</span>
+          <h3>BCC국제학교 합격 (초등 3학년)</h3>
+          <p class="rv-meta">전학 준비 · 리딩·라이팅·수학 병행 · 90분 6회(학부모 요청으로 2회 연장)</p>
+          <p class="rv-body">기본 영어 어휘가 익숙하지 않은 상태로 시작했지만, 쉬는 시간 없이 집중력 있게 수업을 진행해 인터뷰까지 무사히 준비했습니다.</p>
+          <blockquote class="rv-quote">"선생님 정성으로 정말 감사드려요. 다시 한번 감사드립니다 🙏"</blockquote>
+          <p class="rv-result">✅ 결과: BCC국제학교 합격</p>
+        </div>
+        <div class="review-card">
+          <span class="tag-sm">Review · 국제학교과외</span>
+          <h3>브라질 국제학교 합격 (초등 2학년)</h3>
+          <p class="rv-meta">진학 준비 · 문장구조 + 인터뷰 회화 · 주 3회 30분</p>
+          <p class="rv-body">반복적인 회화 연습을 통해 스스로 문장을 구성하며 말하는 힘이 빠르게 성장했고, 인터뷰를 무사히 마쳤습니다.</p>
+          <blockquote class="rv-quote">"선생님 덕분에 좋은 결과도 얻었고 많이 배우고 느꼈습니다. 감사합니다 ❤️"</blockquote>
+          <p class="rv-result">✅ 결과: 국제학교 합격 · 현재 재학 중, 영어 자신감 크게 향상</p>
+        </div>
+        <div class="review-card">
+          <span class="tag-sm">Review · 국제학교과외</span>
+          <h3>학년 전체 문학상 수상 (11학년)</h3>
+          <p class="rv-meta">브랭섬홀아시아 재학생 · English Literature · 주 5회 30분</p>
+          <p class="rv-body">영문학 작품 분석을 어려워하던 학생을 위해 수업 중 다루는 작품을 함께 분석하는 수업을 진행했습니다.</p>
+          <blockquote class="rv-quote">"너무 기쁜 소식을 전하고자 감사 인사 드려요. 학년 전체에서 문학상을 받았습니다!"</blockquote>
+          <p class="rv-result">✅ 결과: 한 학기 후 학년 전체 문학상 수상</p>
+        </div>
+      </div>
+      <p class="source-note" style="margin-top:16px;">※ 실제 학부모님 후기를 바탕으로 정리했습니다. 개인정보 보호를 위해 이름은 생략했습니다.</p>
     </div>
   </section>
 
