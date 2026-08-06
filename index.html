@@ -893,10 +893,18 @@
   document.addEventListener('click', function(e){
     var el = e.target.closest('[data-nav]');
     if (!el) return;
+    var href = el.getAttribute('href') || '';
     var scrollId = el.getAttribute('data-scroll');
+    if (href === '#' && !scrollId) {
+      e.preventDefault();
+      history.pushState(null, '', location.pathname);
+      showView('home');
+      window.scrollTo(0,0);
+      return;
+    }
     if (scrollId) {
       e.preventDefault();
-      if (location.hash) { location.hash = ''; }
+      history.pushState(null, '', location.pathname);
       showView('home');
       setTimeout(function(){
         var target = document.getElementById(scrollId);
