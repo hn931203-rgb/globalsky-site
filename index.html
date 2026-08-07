@@ -169,8 +169,14 @@
 
   /* hero — vivid sky illustration */
   .hero { position:relative; overflow:hidden; background:linear-gradient(180deg, var(--sky-deep), var(--sky)); padding-top:clamp(48px,7vw,84px); padding-bottom:clamp(64px,9vw,110px); }
-  #view-consulting { position:relative; }
+  #view-consulting { position:relative; background:#F8F4F3; }
   #view-consulting::before { content:""; position:absolute; top:0; left:0; right:0; height:8px; background:linear-gradient(90deg, #7A1F1F, #B5453D); z-index:0; }
+  #view-consulting .fact-card { background:#F4E4E7; border-color:#DCBAC0; }
+  #view-consulting .subject-card { background:#FBF7F7; border-color:#E5D0D3; }
+  #view-consulting .partner-note { background:#F4E4E7; border-color:#C98A93; color:#6B3C42; }
+  #view-consulting h3::before { background:#B07480; }
+  #view-consulting .cat-label { color:#B07480; }
+  #view-consulting .source-note { color:#8A6469; }
   #view-camp, #view-tutoring, #view-study-abroad { position:relative; }
   #view-tutoring::before { content:""; position:absolute; top:0; left:0; right:0; height:420px; background-image:url('images/camp-life-2.jpg'); background-size:cover; background-position:center 30%; opacity:.35; filter:blur(1.5px); z-index:0; }
   #view-tutoring::after { content:""; position:absolute; top:0; left:0; right:0; height:420px; background:linear-gradient(180deg, color-mix(in srgb, var(--bg) 25%, transparent), var(--bg) 96%); z-index:0; }
