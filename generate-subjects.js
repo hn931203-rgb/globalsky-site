@@ -16,7 +16,7 @@ const SUBJECTS = [
     lede: 'Pre-Algebra부터 Algebra 1·2까지, 스파이럴(순환형) 커리큘럼 특유의 개념 누적 구조를 이해하는 강사가 1:1로 매칭됩니다. 국내 국제학교 재학생과 해외 거주 유학생 모두 온라인·오프라인으로 수업 가능합니다.',
     body: 'Algebra(알지브라)는 한 단원을 끝내고 넘어가는 한국식 순차 학습과 달리, 같은 개념을 학년마다 조금씩 심화해 반복하는 스파이럴 방식으로 진행됩니다. 이 순서를 이해하지 못한 채 한국식으로 선행만 나가면 Quiz나 Unit Test에서 엉뚱한 방향으로 문제를 풀게 되는 경우가 많습니다. 글로벌스카이는 이 커리큘럼 흐름에 맞춘 개념 정리와 문제풀이를 병행합니다.',
     tags: ['알지브라','Pre-Algebra','Algebra 1','Algebra 2','스파이럴 커리큘럼','Quiz·Unit Test 대비'],
-    related: ['geometry','precalculus','calculus','sat-math'],
+    related: ['math-tutoring','geometry','precalculus','calculus','sat-math'],
   },
   {
     slug: 'geometry',
@@ -25,7 +25,7 @@ const SUBJECTS = [
     lede: '정리(Theorem)와 증명(Proof) 중심으로 전개되는 Geometry 특성상, 공식 암기보다 논리 전개 방식을 익히는 것이 중요합니다. 국제학교·미국 교과과정 재학생을 위한 1:1 맞춤 수업입니다.',
     body: 'Geometry(지오메트리)는 도형의 성질을 암기하는 과목이 아니라, 주어진 조건에서 결론을 논리적으로 증명해내는 과목입니다. Two-Column Proof 등 학교마다 요구하는 증명 형식이 다르기 때문에, 재학 중인 학교의 평가 방식에 맞춘 연습이 필요합니다.',
     tags: ['지오메트리','Theorem·Proof','Two-Column Proof','좌표기하','도형 내신'],
-    related: ['algebra','precalculus','calculus'],
+    related: ['math-tutoring','algebra','precalculus','calculus'],
   },
   {
     slug: 'precalculus',
@@ -34,7 +34,7 @@ const SUBJECTS = [
     lede: '함수·삼각함수·수열 등 Calculus로 넘어가기 전 반드시 다져야 할 개념을 집중적으로 보완합니다. AP Calculus·IB Math 준비생에게 특히 추천합니다.',
     body: 'Pre-Calculus(프리칼큘러스) 단계에서 함수의 성질과 삼각함수를 제대로 정리하지 못하면 이후 Calculus 진입 시 극한·미분 개념을 따라가기 어렵습니다. 다음 학기 목표 과목(AP Calculus, IB Math AA 등)을 먼저 확인하고 그에 맞춰 우선순위를 조정합니다.',
     tags: ['프리칼큘러스','함수','삼각함수','수열·급수','Calculus 대비'],
-    related: ['algebra','geometry','calculus','ap-calculus'],
+    related: ['math-tutoring','algebra','geometry','calculus','ap-calculus'],
   },
   {
     slug: 'calculus',
@@ -43,7 +43,7 @@ const SUBJECTS = [
     lede: '극한, 미분, 적분의 개념적 이해와 문제 풀이 속도를 함께 끌어올립니다. 학교 내신은 물론 AP Calculus AB/BC 시험 대비도 함께 진행할 수 있습니다.',
     body: 'Calculus(칼큘러스)는 이전 단원의 이해가 다음 단원까지 그대로 이어지는 과목이라, 한 번 놓친 개념이 누적되면 따라잡기가 특히 어렵습니다. 어느 지점에서 이해가 끊겼는지부터 진단한 뒤, 그 지점부터 순서대로 다시 채워나갑니다.',
     tags: ['칼큘러스','극한','미분','적분','AP Calculus AB/BC'],
-    related: ['precalculus','ap-calculus','sat-math'],
+    related: ['math-tutoring','precalculus','ap-calculus','sat-math'],
   },
   {
     slug: 'ap-calculus',
@@ -52,7 +52,7 @@ const SUBJECTS = [
     lede: 'AP Calculus AB/BC 시험 범위와 채점 기준(FRQ 서술형 포함)에 맞춘 실전 대비 수업입니다. 학교 내신과 5월 AP 시험 일정을 함께 고려한 커리큘럼을 짭니다.',
     body: 'AP Calculus는 객관식(MCQ)뿐 아니라 풀이 과정을 서술하는 FRQ(Free Response Question) 비중이 높아, 답만 맞히는 연습으로는 고득점이 어렵습니다. 채점 기준(Rubric)에 맞춰 풀이 과정을 서술하는 연습을 함께 진행합니다.',
     tags: ['AP칼큘러스','AP Calculus AB','AP Calculus BC','FRQ 서술형','5월 AP 시험'],
-    related: ['calculus','precalculus','ib-math-aa'],
+    related: ['math-tutoring','calculus','precalculus','ib-math-aa'],
   },
   {
     slug: 'ib-math-aa',
@@ -61,7 +61,7 @@ const SUBJECTS = [
     lede: 'IB Math AA HL/SL 커리큘럼과 IA(Internal Assessment) 작성까지 지원하는 1:1 수업입니다. 이과 계열 진학을 목표로 하는 학생에게 적합합니다.',
     body: 'IB Math AA는 순수 수학적 사고와 증명, 대수적 처리 능력을 중점적으로 평가합니다. HL과 SL의 난이도·범위 차이를 먼저 확인하고, IA 주제 선정부터 초안 첨삭까지 함께 진행할 수 있습니다.',
     tags: ['IB수학 AA','IB Math AA HL','IB Math AA SL','IA 첨삭','대수·해석'],
-    related: ['ib-math-ai','calculus','ap-calculus'],
+    related: ['math-tutoring','ib-math-ai','calculus','ap-calculus'],
   },
   {
     slug: 'ib-math-ai',
@@ -70,7 +70,7 @@ const SUBJECTS = [
     lede: '통계·모델링 등 실생활 응용 중심의 IB Math AI HL/SL 커리큘럼에 맞춘 1:1 수업입니다. 문과 계열·응용 진학 목표 학생에게 적합합니다.',
     body: 'IB Math AI는 순수 계산보다 통계 해석, 함수 모델링 등 실제 데이터를 다루는 문제 비중이 높습니다. 계산기·소프트웨어 활용이 요구되는 문제 유형도 있어, 시험에서 실제로 쓰는 도구까지 함께 연습합니다.',
     tags: ['IB수학 AI','IB Math AI HL','IB Math AI SL','통계·모델링','IA 첨삭'],
-    related: ['ib-math-aa','precalculus'],
+    related: ['math-tutoring','ib-math-aa','precalculus'],
   },
   {
     slug: 'sat-math',
@@ -79,7 +79,7 @@ const SUBJECTS = [
     lede: '디지털 SAT Math 영역의 문제 유형과 시간 배분 전략에 맞춘 실전 훈련입니다. 현재 점수대를 진단한 뒤 목표 점수까지의 학습 계획을 설계합니다.',
     body: 'SAT Math는 개념 자체보다 제한된 시간 안에 정확히 푸는 전략이 점수를 가릅니다. 모의고사 기반으로 취약 유형을 추려내고, 그 유형만 집중적으로 반복하는 방식으로 진행합니다.',
     tags: ['SAT수학','디지털 SAT','시간 관리 전략','오답 유형 분석'],
-    related: ['algebra','precalculus','calculus'],
+    related: ['math-tutoring','algebra','precalculus','calculus'],
   },
   {
     slug: 'toefl',
@@ -88,7 +88,7 @@ const SUBJECTS = [
     lede: '리딩·리스닝보다 상대적으로 점수 올리기 어려운 Speaking·Writing 영역을 집중적으로 훈련합니다. 유학·국제학교 지원에 필요한 목표 점수에 맞춰 진행합니다.',
     body: 'TOEFL(토플)은 영역별로 요구하는 답변 구조가 정해져 있어, 정해진 템플릿과 시간 안에 논리적으로 답하는 연습이 핵심입니다. 실제 시험과 동일한 형식으로 모의 테스트를 반복하며 취약 영역을 보완합니다.',
     tags: ['토플','Speaking','Writing','Integrated Task','모의테스트'],
-    related: ['ielts','sat-math'],
+    related: ['english-tutoring','ielts','sat-math'],
   },
   {
     slug: 'ielts',
@@ -97,7 +97,7 @@ const SUBJECTS = [
     lede: 'Academic·General Training 두 트랙에 맞춰 Writing Task 1·2, Speaking 인터뷰까지 실전형으로 대비합니다.',
     body: 'IELTS(아이엘츠) Writing은 Task별 채점 기준(Criteria)이 명확히 나뉘어 있어, 기준에 맞춘 첨삭이 점수 향상에 직접적으로 도움이 됩니다. Speaking은 실제 인터뷰 형식으로 모의 세션을 진행하며 발화량과 논리 전개를 함께 훈련합니다.',
     tags: ['아이엘츠','Writing Task 1·2','Speaking 인터뷰','목표 밴드 스코어'],
-    related: ['toefl'],
+    related: ['english-tutoring','toefl'],
   },
   {
     slug: 'ap-physics',
@@ -106,7 +106,7 @@ const SUBJECTS = [
     lede: 'AP Physics 1, 2, C(Mechanics/E&M) 각 트랙의 개념과 FRQ 서술형 문제풀이를 함께 대비합니다.',
     body: 'AP Physics(AP물리) C는 Calculus 기반 문제풀이가 요구되는 만큼, 물리 개념과 동시에 필요한 수학 도구를 함께 점검합니다. 실험 기반 문제(Experimental Design) 유형도 놓치지 않도록 별도로 연습합니다.',
     tags: ['AP물리','AP Physics 1','AP Physics 2','AP Physics C','FRQ 서술형'],
-    related: ['ap-calculus','ap-chemistry'],
+    related: ['science-tutoring','ap-calculus','ap-chemistry'],
   },
   {
     slug: 'ap-chemistry',
@@ -115,7 +115,7 @@ const SUBJECTS = [
     lede: '몰 개념, 화학반응식, 평형 등 AP Chemistry 핵심 단원을 실험 데이터 해석 문제와 함께 대비합니다.',
     body: 'AP Chemistry(AP화학)는 계산 문제와 실험 데이터 해석 문제가 함께 출제되어, 공식 적용과 그래프·데이터 읽기 능력을 모두 요구합니다. 두 유형을 나눠서 각각 집중 훈련합니다.',
     tags: ['AP화학','몰 개념','화학반응식','평형·산염기','실험 데이터 해석'],
-    related: ['ap-physics','ap-biology'],
+    related: ['science-tutoring','ap-physics','ap-biology'],
   },
   {
     slug: 'ap-biology',
@@ -124,7 +124,7 @@ const SUBJECTS = [
     lede: '방대한 암기량과 실험 기반 서술형이 함께 요구되는 AP Biology를 개념 지도 중심으로 정리합니다.',
     body: 'AP Biology(AP생물)는 단순 암기만으로는 FRQ에서 고득점이 어렵고, 개념 간의 인과관계를 서술하는 능력이 필요합니다. 단원별 개념 지도를 함께 그려가며 암기와 서술을 동시에 훈련합니다.',
     tags: ['AP생물','세포·유전','생태·진화','FRQ 서술형'],
-    related: ['ap-chemistry'],
+    related: ['science-tutoring','ap-chemistry'],
   },
   {
     slug: 'admission-tutoring',
@@ -179,6 +179,33 @@ const SUBJECTS = [
     body: '국제학교 입학 수학시험은 단순 연산보다 문장제·논리 문제 비중이 높은 경우가 많습니다. 목표 학교·학년에서 요구하는 수준을 먼저 확인한 뒤, 부족한 개념을 채우는 방식으로 진행합니다.',
     tags: ['입학 수학시험','문장제·논리 문제','MAP Math'],
     related: ['map-test','admission-exam-prep','algebra'],
+  },
+  {
+    slug: 'math-tutoring',
+    name: '국제학교 수학',
+    h1: '국제학교 수학 과외 — Algebra·Geometry·Pre-Calculus·Calculus·IB·AP 전문 매칭',
+    lede: '중·고등 국제학교 수학 커리큘럼(Algebra, Geometry, Pre-Calculus, Calculus, IB Math AA/AI, AP Calculus)에 맞춰 과목별 전문 강사를 매칭하는 국제학교 수학 과외입니다.',
+    body: '국제학교 수학 과외는 학년보다 진도(Course Level)를 기준으로 반이 나뉘는 경우가 많아, 같은 학년이라도 배우는 과목명이 서로 다를 수 있습니다. 지금 듣고 있는 과목명을 먼저 확인한 뒤, 그 과목에 맞춘 전문 강사를 매칭해 드립니다.',
+    tags: ['국제학교 수학','Algebra','Geometry','Pre-Calculus','Calculus','IB Math','AP Calculus'],
+    related: ['algebra','geometry','precalculus','calculus','ap-calculus','ib-math-aa','ib-math-ai'],
+  },
+  {
+    slug: 'english-tutoring',
+    name: '국제학교 영어',
+    h1: '국제학교 영어 과외 — Essay·Literature·TOEFL·IELTS 전문 매칭',
+    lede: '내신 Essay·Literature 수업부터 TOEFL·IELTS 같은 공인 영어시험까지, 목적에 맞는 국제학교 영어 과외 강사를 매칭합니다.',
+    body: '국제학교 영어 과외는 내신용 Essay·Literature 수업과, 유학·입학에 필요한 TOEFL·IELTS 같은 공인시험 대비가 서로 다른 접근을 필요로 합니다. 목적을 먼저 확인한 뒤 그에 맞는 강사를 매칭합니다.',
+    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS'],
+    related: ['toefl','ielts','sat-math'],
+  },
+  {
+    slug: 'science-tutoring',
+    name: '국제학교 과학',
+    h1: '국제학교 과학 과외 — AP Physics·Chemistry·Biology 전문 매칭',
+    lede: 'AP Physics, AP Chemistry, AP Biology 등 국제학교 과학 커리큘럼에 맞춘 국제학교 과학 과외입니다.',
+    body: '국제학교 과학 과목은 계산 중심 단원과 서술형(FRQ) 단원이 함께 출제되는 경우가 많아, 두 유형을 나눠 대비하는 것이 중요합니다. 재학 중인 학교의 트랙(AP Physics 1/2/C 등)을 먼저 확인한 뒤 그에 맞춰 커리큘럼을 짭니다.',
+    tags: ['국제학교 과학','AP Physics','AP Chemistry','AP Biology'],
+    related: ['ap-physics','ap-chemistry','ap-biology'],
   },
   {
     slug: 'admission-english-test',
