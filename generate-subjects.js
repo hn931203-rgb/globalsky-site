@@ -183,11 +183,48 @@ const SUBJECTS = [
   {
     slug: 'math-tutoring',
     name: '국제학교 수학',
-    h1: '국제학교 수학 과외 — Algebra·Geometry·Pre-Calculus·Calculus·IB·AP 전문 매칭',
-    lede: '중·고등 국제학교 수학 커리큘럼(Algebra, Geometry, Pre-Calculus, Calculus, IB Math AA/AI, AP Calculus)에 맞춰 과목별 전문 강사를 매칭하는 국제학교 수학 과외입니다.',
-    body: '국제학교 수학 과외는 학년보다 진도(Course Level)를 기준으로 반이 나뉘는 경우가 많아, 같은 학년이라도 배우는 과목명이 서로 다를 수 있습니다. 지금 듣고 있는 과목명을 먼저 확인한 뒤, 그 과목에 맞춘 전문 강사를 매칭해 드립니다.',
-    tags: ['국제학교 수학','Algebra','Geometry','Pre-Calculus','Calculus','IB Math','AP Calculus'],
+    h1: '해외수학과외 — 국제학교 수학 과외 · Algebra·Geometry·Pre-Calculus·Calculus·IB·AP 전문 매칭',
+    lede: '해외 거주·국내 국제학교 재학 상관없이, 중·고등 해외 수학과외 커리큘럼(Algebra, Geometry, Pre-Calculus, Calculus, IB Math AA/AI, AP Calculus)에 맞춰 과목별 전문 강사를 매칭하는 국제학교 수학 과외입니다.',
+    body: '해외수학과외는 국내 수학 학원처럼 학년 단위가 아니라, 학년보다 진도(Course Level)를 기준으로 반이 나뉘는 경우가 많아 같은 학년이라도 배우는 과목명이 서로 다를 수 있습니다. 지금 듣고 있는 과목명을 먼저 확인한 뒤, 그 과목에 맞춘 전문 강사를 매칭해 드립니다.',
+    tags: ['해외수학과외','국제학교 수학','Algebra','Geometry','Pre-Calculus','Calculus','IB Math','AP Calculus'],
     related: ['algebra','geometry','precalculus','calculus','ap-calculus','ib-math-aa','ib-math-ai'],
+    extraSections: [
+      {
+        h2: '국제학교수학과외',
+        paras: [
+          '국제학교수학과외가 한국 학원 수업과 가장 다른 점은 계산 속도보다 개념 이해를 먼저 확인한다는 것입니다. 왜 그 공식이 성립하는지 스스로 설명할 수 있어야 다음 단원으로 넘어가는 방식이라, 국제학교수학과외 수업에서는 답을 맞히는 것보다 풀이 과정을 말로 설명하게 하는 연습을 자주 시킵니다.',
+          '국제학교수학과외를 받는 학생 대부분은 문제 유형을 외우기보다, 처음 보는 유형이라도 배운 개념을 응용해 풀어내는 훈련을 합니다. 이 훈련이 쌓이면 시험 범위가 아닌 문제가 나와도 당황하지 않게 됩니다.',
+        ],
+      },
+      {
+        h2: '해외학생수학과외',
+        paras: [
+          '해외학생수학과외는 거주 국가와 다니는 학교에 따라 진도와 교재가 제각각이라, 첫 수업 전 지금 배우고 있는 단원과 교재를 먼저 확인하는 데서 시작합니다. 같은 학년이어도 어떤 학생은 Algebra를, 어떤 학생은 Geometry를 배우고 있을 수 있습니다.',
+          '초등 단계 해외학생수학과외는 사칙연산·분수·소수 등 기초 개념을 다지고, 중등부터는 방정식과 함수 중심으로, 고등에서는 미적분·통계까지 이어지는 흐름을 학생의 현재 위치에 맞춰 조정합니다.',
+        ],
+      },
+      {
+        h2: 'algebra수학과외',
+        paras: [
+          'algebra수학과외는 변수·방정식·함수라는 세 축을 중심으로 진행됩니다. Algebra 1에서 기본 방정식과 함수의 개념을 익히고, Algebra 2에서 더 복잡한 함수와 다항식으로 확장되는 구조라, 앞 단원 개념이 흔들리면 뒷단원에서 바로 티가 납니다.',
+          'algebra수학과외에서는 매 단원이 끝날 때마다 Quiz·Unit Test로 이해도를 점검하는 경우가 많아, 시험 직전 벼락치기보다는 평소 개념 점검이 훨씬 효과적입니다.',
+        ],
+      },
+      {
+        h2: '미국교과서수학과외',
+        paras: [
+          '미국교과서수학과외의 특징은 교과서 자체가 영어로 되어 있어, 수학 개념과 영어 독해를 동시에 소화해야 한다는 점입니다. 같은 개념이라도 한국 교과서와 용어·설명 순서가 달라, 처음에는 낯설게 느껴질 수 있습니다.',
+          '미국교과서수학과외에서는 단원마다 실생활 예시로 개념을 도입하는 구성이 많아, 문제에 등장하는 영어 표현과 맥락을 함께 읽는 연습을 병행합니다.',
+        ],
+      },
+      {
+        h2: '알지브라과외',
+        paras: [
+          '알지브라과외는 순수 수학 문제풀이를 넘어 과학·공학·경제 등 다양한 분야에서 실제로 쓰이는 사고방식을 다룹니다. 변수로 관계를 표현하고 방정식으로 답을 찾아내는 과정 자체가, 이후 더 높은 단계의 수학·과학 과목을 이해하는 기초가 됩니다.',
+          '알지브라과외를 처음 시작할 때는 기본 개념을 확실히 짚은 뒤 문제를 반복해서 푸는 방식이 가장 효과적이며, 어디서 막히는지를 먼저 진단하고 그 지점부터 순서대로 채워나갑니다.',
+        ],
+      },
+    ],
   },
   {
     slug: 'english-tutoring',
@@ -254,6 +291,15 @@ const SUBJECTS = [
   },
 ];
 
+for (const s of SUBJECTS) {
+  const label = (s.tags[0] || s.name).replace(/\s+/g, '');
+  const videoTag = label + '화상과외';
+  const onlineTag = label + '온라인과외';
+  if (!s.tags.includes(videoTag)) s.tags.push(videoTag);
+  if (!s.tags.includes(onlineTag)) s.tags.push(onlineTag);
+  s.videoNote = `${label} 화상과외·온라인과외 모두 가능합니다. 국내에 계셔도, 시차가 있는 해외에 거주 중이어도 화상으로 안정적으로 수업을 진행하며, 필요하면 방문 수업도 병행할 수 있습니다.`;
+}
+
 function subjectCard(s) {
   return `<a href="/subjects/${s.slug}.html" class="subject-card" style="display:block;text-decoration:none;"><h3>${esc(s.name)}</h3><ul class="tags">${s.tags.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></a>`;
 }
@@ -290,6 +336,7 @@ const HEAD_STYLE = `
   h2 { font-size:1.3rem; margin-bottom:14px; }
   .info-card { background:#fff; border:2px solid var(--border-strong); border-radius:18px; padding:26px; }
   .info-card p { color:var(--ink-muted); margin:0; }
+  .info-card p + p { margin-top:12px; }
   .tags { margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; padding:0; list-style:none; }
   .tags li { font-size:.82rem; font-weight:600; background:var(--surface-2); color:var(--ink-muted); border-radius:999px; padding:5px 12px; }
   .subject-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
@@ -361,9 +408,15 @@ ${HEADER}
   <section>
     <div class="info-card">
       <p>${esc(s.body)}</p>
+      <p>${esc(s.videoNote)}</p>
       <ul class="tags">${s.tags.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
     </div>
   </section>
+
+  ${(s.extraSections || []).map(sec => `<section>
+    <h2>${esc(sec.h2)}</h2>
+    <div class="info-card">${sec.paras.map(p => `<p>${esc(p)}</p>`).join('\n    ')}</div>
+  </section>`).join('\n  ')}
 
   <section>
     <h2>함께 찾는 과목</h2>
