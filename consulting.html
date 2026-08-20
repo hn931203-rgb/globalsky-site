@@ -51,13 +51,22 @@
   .breadcrumb { font-size:.86rem; color:var(--ink-faint); margin:20px 0 6px; }
   .breadcrumb a { text-decoration:none; color:var(--ink-faint); }
   .breadcrumb a:hover { color:var(--pink); }
-  .hero { padding:20px 0 32px; position:relative; }
-  .hero::before { content:""; position:absolute; top:-20px; left:0; right:0; height:8px; background:linear-gradient(90deg, #7A1F1F, #B5453D); }
-  .hero h1 { font-size:clamp(1.5rem,3.6vw,2.3rem); color:var(--sky-deep); text-shadow:2px 3px 0 rgba(0,0,0,.08); padding-top:16px; }
-  .hero .lede { margin-top:14px; color:var(--ink-muted); font-size:1.05rem; max-width:65ch; }
+  :root {
+    --consult-navy:#0F1D33; --consult-navy-2:#1A2E4D; --consult-gold:#C9A45C; --consult-gold-line:rgba(201,164,92,.4); --consult-cream:#F3EEE3; --consult-cream-dim:rgba(243,238,227,.72);
+  }
+  .hero { position:relative; margin:20px 0 0; padding:52px 32px 40px; border-radius:20px; background:linear-gradient(150deg, var(--consult-navy) 0%, var(--consult-navy-2) 100%); overflow:hidden; }
+  @media (max-width:640px) { .hero { padding:36px 20px 30px; } .hero-art { width:60%; opacity:.1; } }
+  .hero-art { position:absolute; top:0; right:0; bottom:0; width:46%; opacity:.16; pointer-events:none; }
+  .hero-eyebrow { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-body); font-size:.74rem; font-weight:700; letter-spacing:.14em; color:var(--consult-gold); text-transform:uppercase; border:1px solid var(--consult-gold-line); border-radius:999px; padding:6px 14px; margin-bottom:18px; }
+  .hero h1 { font-size:clamp(1.5rem,3.6vw,2.3rem); color:var(--consult-cream); text-shadow:none; padding-top:0; max-width:20ch; position:relative; }
+  .hero .lede { margin-top:16px; color:var(--consult-cream-dim); font-size:1.02rem; max-width:56ch; position:relative; line-height:1.85; }
+  .hero .btn { background:var(--consult-gold); color:var(--consult-navy); }
+  .hero-badges { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; position:relative; }
+  .hero-badges span { display:inline-flex; align-items:center; gap:6px; font-size:.82rem; color:var(--consult-cream); background:rgba(255,255,255,.06); border:1px solid var(--consult-gold-line); border-radius:999px; padding:7px 14px; }
   section { padding:28px 0; }
   h2 { font-size:1.4rem; margin-bottom:16px; }
-  .partner-note { display:flex; gap:10px; padding:16px 18px; background:#FFF6D6; border:1px solid var(--yellow); border-radius:12px; font-size:.92rem; color:var(--yellow-ink); margin-top:20px; }
+  .partner-note { display:flex; gap:10px; padding:16px 18px; background:rgba(201,164,92,.1); border:1px solid var(--consult-gold-line); border-radius:12px; font-size:.9rem; color:var(--consult-cream-dim); margin-top:26px; position:relative; }
+  .partner-note strong { color:var(--consult-gold); }
   .fact-card { border:2px solid var(--border-strong); border-radius:18px; background:var(--card-yellow); padding:26px; margin-bottom:14px; }
   .fact-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:14px; }
   @media (max-width:640px){ .fact-grid{ grid-template-columns:1fr; } }
@@ -100,9 +109,31 @@
   <p class="breadcrumb"><a href="/">글로벌스카이</a> › 세인트폴국제학교입학</p>
 
   <section class="hero">
-    <h1>국내 세인트폴대치 아카데미 국제학교(Saint Paul Academy Daechi) — 비인가국제학교</h1>
-    <p class="lede">미국학력인정 미국식 중고등학교과정입니다. 미국학력인증 기관으로 졸업 시 미국 고등학교 졸업장을 취득하며, 해외대학 진학을 준비합니다.</p>
-    <div style="margin-top:20px;"><a class="btn" href="tel:01083550401">전화로 입학 상담 신청</a></div>
+    <svg class="hero-art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#C9A45C" stroke-width="2">
+        <rect x="60" y="180" width="280" height="260" />
+        <line x1="60" y1="230" x2="340" y2="230" />
+        <line x1="90" y1="180" x2="90" y2="440" /><line x1="140" y1="180" x2="140" y2="440" />
+        <line x1="190" y1="180" x2="190" y2="440" /><line x1="240" y1="180" x2="240" y2="440" />
+        <line x1="290" y1="180" x2="290" y2="440" /><line x1="340" y1="180" x2="340" y2="440" />
+        <polygon points="40,180 200,70 360,180" />
+        <rect x="185" y="90" width="30" height="45" />
+        <circle cx="200" cy="40" r="14" />
+        <line x1="200" y1="54" x2="200" y2="70" />
+        <rect x="170" y="340" width="60" height="100" />
+        <line x1="200" y1="340" x2="200" y2="440" />
+      </g>
+    </svg>
+    <p class="hero-eyebrow">🏛 International School Admissions</p>
+    <h1>국내 세인트폴대치 아카데미 국제학교<br>(Saint Paul Academy Daechi) — 비인가국제학교</h1>
+    <p class="lede">미국학력인정 미국식 중고등학교과정으로, 국내 교육과정이 아닌 미국 고등학교 졸업 요건에 맞춰 운영됩니다. 미국학력인증 기관으로부터 졸업 시 미국 고등학교 졸업장을 취득하며, AP 과정과 College Counseling을 통해 해외대학 진학을 준비합니다. 국내 학력으로는 인정되지 않는 대신, 국내 교육과정에 얽매이지 않는 커리큘럼 구성이 특징입니다.</p>
+    <div class="hero-badges">
+      <span>🎓 미국학력인증 졸업장</span>
+      <span>📚 AP 과정 운영</span>
+      <span>🧭 College Counseling</span>
+      <span>📍 서울 강남구 대치동</span>
+    </div>
+    <div style="margin-top:24px;"><a class="btn" href="tel:01083550401">전화로 입학 상담 신청</a></div>
     <div class="partner-note">🤝 <span><strong>세인트폴대치아카데미 공식 파트너</strong> — 글로벌스카이는 세인트폴대치아카데미의 공식 파트너로서 입학 컨설팅을 진행합니다. 최종 입학 결정 권한은 학교 측에 있으며, 저희는 지원 과정 전반을 돕습니다.</span></div>
   </section>
 
