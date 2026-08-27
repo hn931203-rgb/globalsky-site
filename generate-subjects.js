@@ -245,6 +245,15 @@ const SUBJECTS = [
     related: ['ap-physics','ap-chemistry','ap-biology'],
   },
   {
+    slug: 'primary-exam-prep',
+    name: 'Primary 시험대비',
+    h1: 'Primary(초등) 국제학교 시험대비 — Cambridge Checkpoint·ISA·CAT4',
+    lede: '국제학교 Primary(초등) 과정은 학기 중간중간 표준화 시험으로 학업 성취도를 점검합니다. Cambridge Primary Checkpoint, ISA(International Schools\' Assessment), CAT4 등 학교마다 채택한 시험 종류가 달라, 재학 중인 학교가 어떤 시험을 보는지부터 확인하고 그에 맞춰 준비합니다.',
+    body: 'Primary 시험대비는 수능이나 내신처럼 등급을 가르는 시험이 아니라, 학생의 현재 학업 수준을 진단하고 다음 학년 배치·학습 계획에 참고하는 성격이 강합니다. Cambridge Primary Checkpoint는 영어·수학·과학 3과목을, ISA와 CAT4는 언어·수리·추론 능력을 폭넓게 평가합니다. 시험 자체보다 학년 수준의 개념을 고르게 다지는 것이 점수 향상의 핵심입니다.',
+    tags: ['Primary 시험대비','Cambridge Primary Checkpoint','ISA 시험','CAT4','초등 국제학교 시험'],
+    related: ['map-test','admission-math-test','admission-english-test','math-tutoring'],
+  },
+  {
     slug: 'expat-child-tutoring',
     name: '주재원 자녀',
     h1: '주재원 자녀 과외 — 해외 거주 학생 전 과목 온라인 매칭',
