@@ -364,7 +364,10 @@ const HEAD_STYLE = `
   footer { border-top:1px solid var(--border); padding:24px 0; font-size:.82rem; color:var(--ink-faint); }
 `;
 
-const FAVICON = `<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2720%27 fill=%27%23FFD400%27/%3E%3Cg fill=%27%23BFE6F7%27 stroke=%27%231A1A1A%27 stroke-width=%273%27%3E%3Ccircle cx=%2735%27 cy=%2755%27 r=%2718%27/%3E%3Ccircle cx=%2755%27 cy=%2748%27 r=%2722%27/%3E%3Ccircle cx=%2770%27 cy=%2758%27 r=%2716%27/%3E%3Ccircle cx=%2748%27 cy=%2768%27 r=%2720%27/%3E%3Crect x=%2728%27 y=%2755%27 width=%2752%27 height=%2726%27 rx=%2713%27/%3E%3C/g%3E%3C/svg%3E" />`;
+const FAVICON = `<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="192x192" href="/images/favicon-192.png" />`;
 
 const HEADER = `<header class="site"><div class="wrap nav-row"><a class="logo" href="/">글로벌스카이</a><a class="btn" href="tel:${TEL}">📞 ${TEL_DISPLAY}</a></div></header>`;
 const FOOTER = `<footer><div class="wrap">글로벌스카이 — 서울 강남구 대치동 · ${TEL_DISPLAY} <a href="/">홈으로</a></div></footer>`;
