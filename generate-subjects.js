@@ -392,6 +392,8 @@ ${FAVICON}
 <meta property="og:description" content="${esc(desc)}" />
 <meta property="og:url" content="https://globalsky.kr/subjects/${s.slug}.html" />
 <meta property="og:image" content="https://globalsky.kr/images/og-banner.png" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
 <meta property="og:locale" content="ko_KR" />
 <script type="application/ld+json">
 {
