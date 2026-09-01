@@ -15,7 +15,7 @@ const SUBJECTS = [
     h1: 'Algebra(알지브라) 맞춤과외 — 국제학교·해외 유학생 전문 1:1 매칭',
     lede: 'Pre-Algebra부터 Algebra 1·2까지, 스파이럴(순환형) 커리큘럼 특유의 개념 누적 구조를 이해하는 강사가 1:1로 매칭됩니다. 국내 국제학교 재학생과 해외 거주 유학생 모두 온라인·오프라인으로 수업 가능합니다.',
     body: 'Algebra(알지브라)는 한 단원을 끝내고 넘어가는 한국식 순차 학습과 달리, 같은 개념을 학년마다 조금씩 심화해 반복하는 스파이럴 방식으로 진행됩니다. 이 순서를 이해하지 못한 채 한국식으로 선행만 나가면 Quiz나 Unit Test에서 엉뚱한 방향으로 문제를 풀게 되는 경우가 많습니다. 글로벌스카이는 이 커리큘럼 흐름에 맞춘 개념 정리와 문제풀이를 병행합니다.',
-    tags: ['알지브라','Pre-Algebra','Algebra 1','Algebra 2','스파이럴 커리큘럼','Quiz·Unit Test 대비'],
+    tags: ['알지브라','Pre-Algebra','Algebra 1','Algebra 2','스파이럴 커리큘럼','Quiz·Unit Test 대비','Linear Equations','Quadratic Functions','Factoring','Systems of Equations'],
     related: ['math-tutoring','geometry','precalculus','calculus','sat-math'],
   },
   {
@@ -24,7 +24,7 @@ const SUBJECTS = [
     h1: 'Geometry(지오메트리) 맞춤과외 — 증명·도형 개념부터 내신까지',
     lede: '정리(Theorem)와 증명(Proof) 중심으로 전개되는 Geometry 특성상, 공식 암기보다 논리 전개 방식을 익히는 것이 중요합니다. 국제학교·미국 교과과정 재학생을 위한 1:1 맞춤 수업입니다.',
     body: 'Geometry(지오메트리)는 도형의 성질을 암기하는 과목이 아니라, 주어진 조건에서 결론을 논리적으로 증명해내는 과목입니다. Two-Column Proof 등 학교마다 요구하는 증명 형식이 다르기 때문에, 재학 중인 학교의 평가 방식에 맞춘 연습이 필요합니다.',
-    tags: ['지오메트리','Theorem·Proof','Two-Column Proof','좌표기하','도형 내신'],
+    tags: ['지오메트리','Theorem·Proof','Two-Column Proof','좌표기하','도형 내신','Congruence','Similarity','Circle Theorems','Coordinate Geometry'],
     related: ['math-tutoring','algebra','precalculus','calculus'],
   },
   {
@@ -33,7 +33,7 @@ const SUBJECTS = [
     h1: 'Pre-Calculus(프리칼큘러스) 맞춤과외 — Calculus 진입 전 기초를 탄탄하게',
     lede: '함수·삼각함수·수열 등 Calculus로 넘어가기 전 반드시 다져야 할 개념을 집중적으로 보완합니다. AP Calculus·IB Math 준비생에게 특히 추천합니다.',
     body: 'Pre-Calculus(프리칼큘러스) 단계에서 함수의 성질과 삼각함수를 제대로 정리하지 못하면 이후 Calculus 진입 시 극한·미분 개념을 따라가기 어렵습니다. 다음 학기 목표 과목(AP Calculus, IB Math AA 등)을 먼저 확인하고 그에 맞춰 우선순위를 조정합니다.',
-    tags: ['프리칼큘러스','함수','삼각함수','수열·급수','Calculus 대비'],
+    tags: ['프리칼큘러스','함수','삼각함수','수열·급수','Calculus 대비','Vectors','Conic Sections','Trigonometric Identities'],
     related: ['math-tutoring','algebra','geometry','calculus','ap-calculus'],
   },
   {
@@ -42,7 +42,7 @@ const SUBJECTS = [
     h1: 'Calculus(칼큘러스) 맞춤과외 — 극한·미분·적분 개념 정리',
     lede: '극한, 미분, 적분의 개념적 이해와 문제 풀이 속도를 함께 끌어올립니다. 학교 내신은 물론 AP Calculus AB/BC 시험 대비도 함께 진행할 수 있습니다.',
     body: 'Calculus(칼큘러스)는 이전 단원의 이해가 다음 단원까지 그대로 이어지는 과목이라, 한 번 놓친 개념이 누적되면 따라잡기가 특히 어렵습니다. 어느 지점에서 이해가 끊겼는지부터 진단한 뒤, 그 지점부터 순서대로 다시 채워나갑니다.',
-    tags: ['칼큘러스','극한','미분','적분','AP Calculus AB/BC'],
+    tags: ['칼큘러스','극한','미분','적분','AP Calculus AB/BC','Related Rates','Optimization','Series and Sequences'],
     related: ['math-tutoring','precalculus','ap-calculus','sat-math'],
   },
   {
@@ -51,7 +51,7 @@ const SUBJECTS = [
     h1: 'AP Calculus AB·BC 맞춤과외 — 5점 목표 실전 대비',
     lede: 'AP Calculus AB/BC 시험 범위와 채점 기준(FRQ 서술형 포함)에 맞춘 실전 대비 수업입니다. 학교 내신과 5월 AP 시험 일정을 함께 고려한 커리큘럼을 짭니다.',
     body: 'AP Calculus는 객관식(MCQ)뿐 아니라 풀이 과정을 서술하는 FRQ(Free Response Question) 비중이 높아, 답만 맞히는 연습으로는 고득점이 어렵습니다. 채점 기준(Rubric)에 맞춰 풀이 과정을 서술하는 연습을 함께 진행합니다.',
-    tags: ['AP칼큘러스','AP Calculus AB','AP Calculus BC','FRQ 서술형','5월 AP 시험'],
+    tags: ['AP칼큘러스','AP Calculus AB','AP Calculus BC','FRQ 서술형','5월 AP 시험','Differential Equations','Applications of Integration','Limits and Continuity'],
     related: ['math-tutoring','calculus','precalculus','ib-math-aa'],
   },
   {
@@ -60,7 +60,7 @@ const SUBJECTS = [
     h1: 'IB Math AA(Analysis & Approaches) 맞춤과외',
     lede: 'IB Math AA HL/SL 커리큘럼과 IA(Internal Assessment) 작성까지 지원하는 1:1 수업입니다. 이과 계열 진학을 목표로 하는 학생에게 적합합니다.',
     body: 'IB Math AA는 순수 수학적 사고와 증명, 대수적 처리 능력을 중점적으로 평가합니다. HL과 SL의 난이도·범위 차이를 먼저 확인하고, IA 주제 선정부터 초안 첨삭까지 함께 진행할 수 있습니다.',
-    tags: ['IB수학 AA','IB Math AA HL','IB Math AA SL','IA 첨삭','대수·해석'],
+    tags: ['IB수학 AA','IB Math AA HL','IB Math AA SL','IA 첨삭','대수·해석','Complex Numbers','Vectors','Probability Distributions'],
     related: ['math-tutoring','ib-math-ai','calculus','ap-calculus'],
   },
   {
@@ -69,7 +69,7 @@ const SUBJECTS = [
     h1: 'IB Math AI(Applications & Interpretation) 맞춤과외',
     lede: '통계·모델링 등 실생활 응용 중심의 IB Math AI HL/SL 커리큘럼에 맞춘 1:1 수업입니다. 문과 계열·응용 진학 목표 학생에게 적합합니다.',
     body: 'IB Math AI는 순수 계산보다 통계 해석, 함수 모델링 등 실제 데이터를 다루는 문제 비중이 높습니다. 계산기·소프트웨어 활용이 요구되는 문제 유형도 있어, 시험에서 실제로 쓰는 도구까지 함께 연습합니다.',
-    tags: ['IB수학 AI','IB Math AI HL','IB Math AI SL','통계·모델링','IA 첨삭'],
+    tags: ['IB수학 AI','IB Math AI HL','IB Math AI SL','통계·모델링','IA 첨삭','Correlation and Regression','Financial Mathematics','Technology-based Problem Solving'],
     related: ['math-tutoring','ib-math-aa','precalculus'],
   },
   {
@@ -78,7 +78,7 @@ const SUBJECTS = [
     h1: 'SAT Math 맞춤과외 — 목표 점수별 전략 수업',
     lede: '디지털 SAT Math 영역의 문제 유형과 시간 배분 전략에 맞춘 실전 훈련입니다. 현재 점수대를 진단한 뒤 목표 점수까지의 학습 계획을 설계합니다.',
     body: 'SAT Math는 개념 자체보다 제한된 시간 안에 정확히 푸는 전략이 점수를 가릅니다. 모의고사 기반으로 취약 유형을 추려내고, 그 유형만 집중적으로 반복하는 방식으로 진행합니다.',
-    tags: ['SAT수학','디지털 SAT','시간 관리 전략','오답 유형 분석'],
+    tags: ['SAT수학','디지털 SAT','시간 관리 전략','오답 유형 분석','Heart of Algebra','Problem Solving and Data Analysis','Passport to Advanced Math'],
     related: ['math-tutoring','algebra','precalculus','calculus'],
   },
   {
@@ -87,7 +87,7 @@ const SUBJECTS = [
     h1: 'ACT 맞춤과외 — 4개 영역 통합 실전 훈련',
     lede: 'English·Math·Reading·Science 4개 영역을 정해진 시간 안에 빠르게 풀어내는 훈련에 맞춘 1:1 수업입니다. SAT보다 시간 압박이 큰 시험 특성에 맞춰 준비합니다.',
     body: 'ACT는 SAT와 달리 Science 영역이 별도로 있고, 영역당 주어지는 시간이 짧아 정확도만큼이나 속도가 중요합니다. 모의고사로 현재 영역별 점수를 진단한 뒤, 시간 안에 끝내지 못하는 영역을 우선순위로 두고 반복 훈련합니다.',
-    tags: ['ACT시험','ACT English','ACT Science','시간 관리 전략','모의고사 진단'],
+    tags: ['ACT시험','ACT English','ACT Science','시간 관리 전략','모의고사 진단','Usage and Mechanics','Rhetorical Skills','Data Representation'],
     related: ['math-tutoring','sat-math','toefl'],
   },
   {
@@ -96,7 +96,7 @@ const SUBJECTS = [
     h1: 'TOEFL(토플) 맞춤과외 — Speaking·Writing 집중 관리',
     lede: '리딩·리스닝보다 상대적으로 점수 올리기 어려운 Speaking·Writing 영역을 집중적으로 훈련합니다. 유학·국제학교 지원에 필요한 목표 점수에 맞춰 진행합니다.',
     body: 'TOEFL(토플)은 영역별로 요구하는 답변 구조가 정해져 있어, 정해진 템플릿과 시간 안에 논리적으로 답하는 연습이 핵심입니다. 실제 시험과 동일한 형식으로 모의 테스트를 반복하며 취약 영역을 보완합니다.',
-    tags: ['토플','Speaking','Writing','Integrated Task','모의테스트'],
+    tags: ['토플','Speaking','Writing','Integrated Task','모의테스트','Reading','Listening','Independent Task'],
     related: ['english-tutoring','ielts','sat-math'],
   },
   {
@@ -105,7 +105,7 @@ const SUBJECTS = [
     h1: 'IELTS(아이엘츠) 맞춤과외 — Academic·General 목표 밴드 달성',
     lede: 'Academic·General Training 두 트랙에 맞춰 Writing Task 1·2, Speaking 인터뷰까지 실전형으로 대비합니다.',
     body: 'IELTS(아이엘츠) Writing은 Task별 채점 기준(Criteria)이 명확히 나뉘어 있어, 기준에 맞춘 첨삭이 점수 향상에 직접적으로 도움이 됩니다. Speaking은 실제 인터뷰 형식으로 모의 세션을 진행하며 발화량과 논리 전개를 함께 훈련합니다.',
-    tags: ['아이엘츠','Writing Task 1·2','Speaking 인터뷰','목표 밴드 스코어'],
+    tags: ['아이엘츠','Writing Task 1·2','Speaking 인터뷰','목표 밴드 스코어','Reading','Listening','Band Descriptor'],
     related: ['english-tutoring','toefl'],
   },
   {
@@ -114,7 +114,7 @@ const SUBJECTS = [
     h1: 'AP Physics(AP물리) 1·2·C 맞춤과외',
     lede: 'AP Physics 1, 2, C(Mechanics/E&M) 각 트랙의 개념과 FRQ 서술형 문제풀이를 함께 대비합니다.',
     body: 'AP Physics(AP물리) C는 Calculus 기반 문제풀이가 요구되는 만큼, 물리 개념과 동시에 필요한 수학 도구를 함께 점검합니다. 실험 기반 문제(Experimental Design) 유형도 놓치지 않도록 별도로 연습합니다.',
-    tags: ['AP물리','AP Physics 1','AP Physics 2','AP Physics C','FRQ 서술형'],
+    tags: ['AP물리','AP Physics 1','AP Physics 2','AP Physics C','FRQ 서술형','Kinematics','Electricity and Magnetism','Momentum','Rotational Motion'],
     related: ['science-tutoring','ap-calculus','ap-chemistry'],
   },
   {
@@ -123,7 +123,7 @@ const SUBJECTS = [
     h1: 'AP Chemistry(AP화학) 맞춤과외',
     lede: '몰 개념, 화학반응식, 평형 등 AP Chemistry 핵심 단원을 실험 데이터 해석 문제와 함께 대비합니다.',
     body: 'AP Chemistry(AP화학)는 계산 문제와 실험 데이터 해석 문제가 함께 출제되어, 공식 적용과 그래프·데이터 읽기 능력을 모두 요구합니다. 두 유형을 나눠서 각각 집중 훈련합니다.',
-    tags: ['AP화학','몰 개념','화학반응식','평형·산염기','실험 데이터 해석'],
+    tags: ['AP화학','몰 개념','화학반응식','평형·산염기','실험 데이터 해석','Thermodynamics','Kinetics','Electrochemistry'],
     related: ['science-tutoring','ap-physics','ap-biology'],
   },
   {
@@ -132,7 +132,7 @@ const SUBJECTS = [
     h1: 'AP Biology(AP생물) 맞춤과외',
     lede: '방대한 암기량과 실험 기반 서술형이 함께 요구되는 AP Biology를 개념 지도 중심으로 정리합니다.',
     body: 'AP Biology(AP생물)는 단순 암기만으로는 FRQ에서 고득점이 어렵고, 개념 간의 인과관계를 서술하는 능력이 필요합니다. 단원별 개념 지도를 함께 그려가며 암기와 서술을 동시에 훈련합니다.',
-    tags: ['AP생물','세포·유전','생태·진화','FRQ 서술형'],
+    tags: ['AP생물','세포·유전','생태·진화','FRQ 서술형','Molecular Biology','Cellular Respiration','Photosynthesis','Gene Expression'],
     related: ['science-tutoring','ap-chemistry'],
   },
   {
@@ -177,7 +177,7 @@ const SUBJECTS = [
     h1: 'MAP Test(맵테스트) 대비 과외 — 국제학교 입학·배치 시험 준비',
     lede: '많은 국제학교가 입학·배치(Placement) 기준으로 활용하는 MAP Test(Measures of Academic Progress) 대비 수업입니다. 영어·수학 두 영역을 함께 다룹니다.',
     body: 'MAP Test(맵테스트)는 학년 단위 시험이 아니라 학생의 현재 실력에 맞춰 문제 난이도가 조정되는 적응형(Adaptive) 시험입니다. 정해진 범위를 외우는 방식이 아니라, 실제 학년 수준의 영어·수학 개념을 폭넓게 갖추는 것이 점수 향상의 핵심입니다.',
-    tags: ['맵테스트','적응형(Adaptive) 시험','영어·수학 영역','입학·배치 기준'],
+    tags: ['맵테스트','적응형(Adaptive) 시험','영어·수학 영역','입학·배치 기준','RIT Score','Lexile Score','NWEA'],
     related: ['admission-tutoring','admission-exam-prep','admission-math-test','admission-english-test'],
   },
   {
@@ -241,8 +241,24 @@ const SUBJECTS = [
     h1: '국제학교 영어 과외 — Essay·Literature·TOEFL·IELTS 전문 매칭',
     lede: '내신 Essay·Literature 수업부터 TOEFL·IELTS 같은 공인 영어시험까지, 목적에 맞는 국제학교 영어 과외 강사를 매칭합니다.',
     body: '국제학교 영어 과외는 내신용 Essay·Literature 수업과, 유학·입학에 필요한 TOEFL·IELTS 같은 공인시험 대비가 서로 다른 접근을 필요로 합니다. 목적을 먼저 확인한 뒤 그에 맞는 강사를 매칭합니다.',
-    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS'],
+    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS','Grammar','Vocabulary','Reading Comprehension','Rhetorical Analysis'],
     related: ['toefl','ielts','sat-math'],
+    extraSections: [
+      {
+        h2: '국제학교영어과외',
+        paras: [
+          '국제학교영어과외는 문법·어휘를 따로 암기하기보다, 실제 Reading·Writing 과제 안에서 어떻게 쓰이는지 함께 확인하는 방식으로 진행됩니다. Argumentative Essay·Literary Analysis처럼 학교마다 요구하는 글쓰기 형식이 정해져 있어, 그 형식에 맞춰 첨삭하는 것이 핵심입니다.',
+          '국제학교영어과외에서는 Novel Study(소설 수업)나 Poetry(시) 단원처럼 학년마다 다루는 문학 장르가 정해져 있는 경우가 많아, 지금 배우는 단원의 평가 방식(에세이·구술발표 등)부터 확인한 뒤 수업을 설계합니다.',
+        ],
+      },
+      {
+        h2: '해외학생영어과외',
+        paras: [
+          '해외학생영어과외는 거주 국가와 재학 중인 학교에 따라 영어 교육과정(미국식·영국식·IB 등)이 달라, 첫 수업 전 지금 쓰고 있는 교재와 커리큘럼부터 확인합니다.',
+          '초등 단계에서는 Reading Comprehension과 어휘력 다지기 중심으로, 중·고등에서는 Essay Writing과 Rhetorical Analysis(수사 분석) 중심으로 이어지는 흐름을 학생의 현재 수준에 맞춰 조정합니다.',
+        ],
+      },
+    ],
   },
   {
     slug: 'science-tutoring',
@@ -250,8 +266,24 @@ const SUBJECTS = [
     h1: '국제학교 과학 과외 — AP Physics·Chemistry·Biology 전문 매칭',
     lede: 'AP Physics, AP Chemistry, AP Biology 등 국제학교 과학 커리큘럼에 맞춘 국제학교 과학 과외입니다.',
     body: '국제학교 과학 과목은 계산 중심 단원과 서술형(FRQ) 단원이 함께 출제되는 경우가 많아, 두 유형을 나눠 대비하는 것이 중요합니다. 재학 중인 학교의 트랙(AP Physics 1/2/C 등)을 먼저 확인한 뒤 그에 맞춰 커리큘럼을 짭니다.',
-    tags: ['국제학교 과학','AP Physics','AP Chemistry','AP Biology'],
+    tags: ['국제학교 과학','AP Physics','AP Chemistry','AP Biology','Cell Biology','Stoichiometry','Kinematics','Chemical Equilibrium'],
     related: ['ap-physics','ap-chemistry','ap-biology'],
+    extraSections: [
+      {
+        h2: '국제학교과학과외',
+        paras: [
+          '국제학교과학과외는 Physics(물리)·Chemistry(화학)·Biology(생물) 세 과목이 겹치는 시기가 있어, 어느 과목의 어떤 단원(Kinematics, Stoichiometry, Cell Biology 등)을 배우고 있는지부터 확인한 뒤 커리큘럼을 짭니다.',
+          '국제학교과학과외 수업에서는 계산 문제와 서술형(FRQ, Free Response Question)이 함께 출제되는 경우가 많아, 개념 설명과 계산 훈련을 나눠서 진행합니다.',
+        ],
+      },
+      {
+        h2: '해외학생과학과외',
+        paras: [
+          '해외학생과학과외는 재학 중인 학교의 트랙(AP Physics 1/2/C, AP Chemistry, AP Biology 등)에 따라 요구되는 수학 수준과 실험 보고서(Lab Report) 형식이 달라, 학교별 평가 기준을 먼저 파악합니다.',
+          '실험 데이터 해석, 그래프 읽기처럼 한국 학원에서 상대적으로 덜 다루는 유형도 국제학교 과학 시험에서는 비중이 커, 개념 학습과 함께 별도로 훈련합니다.',
+        ],
+      },
+    ],
   },
   {
     slug: 'primary-exam-prep',
