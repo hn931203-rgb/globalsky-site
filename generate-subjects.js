@@ -147,11 +147,27 @@ const SUBJECTS = [
   {
     slug: 'admission-exam-prep',
     name: '국제학교 입시과외',
-    h1: '국제학교 입시과외 — 학교별 입학시험 유형 맞춤 대비',
-    lede: '국제학교마다 다른 입학시험(Entrance Exam) 유형과 난이도에 맞춰 영어·수학 시험 준비를 진행합니다. 최근 시험을 앞둔 학생에게 특히 추천합니다.',
+    h1: '국제학교 입시과외 — 학교별 입학평가·입학시험 유형 맞춤 대비',
+    lede: '국제학교마다 다른 입학평가(Admission Assessment)·입학시험(Entrance Exam) 유형과 난이도에 맞춰 영어·수학 시험 준비를 진행합니다. 최근 입학평가를 앞둔 학생에게 특히 추천합니다.',
     body: '국제학교 입학시험은 학교마다 자체 출제하는 영어·수학 지필고사에 더해, MAP Test 같은 표준화 시험 점수를 함께 요구하는 경우가 많습니다. 지원할 학교가 정해졌다면 그 학교가 요구하는 시험 형식을 먼저 확인하고, 남은 기간에 맞춰 우선순위를 정해 대비합니다.',
-    tags: ['학교별 입학시험','영어·수학 지필고사','MAP Test 병행'],
+    tags: ['학교별 입학시험','영어·수학 지필고사','MAP Test 병행','입학평가','입학방법'],
     related: ['admission-tutoring','map-test','admission-math-test','admission-english-test'],
+    extraSections: [
+      {
+        h2: '국내 인가 국제학교(코리안스쿨·인터내셔널스쿨) 입학평가는 어떻게 다른가요',
+        paras: [
+          '채드윅송도국제학교(인천 송도)나 제주국제교육도시(JGEC)의 NLCS Jeju·KIS Jeju·SJA Jeju, 그리고 브랭섬홀아시아처럼 정식 인가를 받은 국제학교는 서류심사와 함께 자체 입학평가(Admission Assessment)를 진행하는 경우가 많습니다. 학교마다 영어·수학 평가시험, MAP Test 등 표준화 시험 점수, 학생 면접·학부모 면담까지 입학방법과 평가 기준이 조금씩 다릅니다.',
+          '국내 비인가 국제학교(코리안스쿨)와 정식 인가 국제학교(인터내셔널스쿨)는 학력 인정 방식부터 다르기 때문에, 목표 학교가 정해졌다면 그 학교의 입학평가 구성(서류·시험·인터뷰 비중)부터 정확히 확인한 뒤 준비 계획을 세우는 것이 중요합니다.',
+        ],
+      },
+      {
+        h2: '국제학교 영어로 배우는 수학·과학 — Algebra·Geometry·AP까지',
+        paras: [
+          '국제학교 진학을 준비 중이라면 한국식 수학·과학 개념을 영어 용어로 다시 정리하는 과정이 필요합니다. Algebra(알지브라)·Geometry(지오메트리) 같은 기초 과정부터, AP Calculus·AP Physics·AP Chemistry·AP Biology 등 상급 과정까지 영어로 개념을 설명하고 문제를 푸는 연습을 병행합니다.',
+          '수학·과학뿐 아니라 Grammar(그래머)·Reading·Writing 등 영어 자체도 입학평가 항목에 포함되는 경우가 많아, 국제학교 영어 커리큘럼에 맞춘 문법·독해 학습을 함께 준비합니다.',
+        ],
+      },
+    ],
   },
   {
     slug: 'transfer-tutoring',
@@ -195,9 +211,16 @@ const SUBJECTS = [
     h1: '해외수학과외 — 국제학교 수학 과외 · Algebra·Geometry·Pre-Calculus·Calculus·IB·AP 전문 매칭',
     lede: '해외 거주·국내 국제학교 재학 상관없이, 중·고등 해외 수학과외 커리큘럼(Algebra, Geometry, Pre-Calculus, Calculus, IB Math AA/AI, AP Calculus)에 맞춰 과목별 전문 강사를 매칭하는 국제학교 수학 과외입니다.',
     body: '해외수학과외는 국내 수학 학원처럼 학년 단위가 아니라, 학년보다 진도(Course Level)를 기준으로 반이 나뉘는 경우가 많아 같은 학년이라도 배우는 과목명이 서로 다를 수 있습니다. 지금 듣고 있는 과목명을 먼저 확인한 뒤, 그 과목에 맞춘 전문 강사를 매칭해 드립니다.',
-    tags: ['해외수학과외','국제학교 수학','Algebra','Geometry','Pre-Calculus','Calculus','IB Math','AP Calculus'],
+    tags: ['해외수학과외','국제학교 수학','Algebra','Geometry','Pre-Calculus','Calculus','IB Math','AP Calculus','Grade 8 수학','Grade 9 수학','Grade 10 수학','Grade 11 수학'],
     related: ['algebra','geometry','precalculus','calculus','ap-calculus','ib-math-aa','ib-math-ai'],
     extraSections: [
+      {
+        h2: 'Grade 8·9·10·11 수학, 한국 학년과 헷갈리지 마세요',
+        paras: [
+          '국제학교는 한국의 중1~고3 대신 Grade 8·9·10·11·12 같은 학년제를 씁니다. 보통 Grade 8은 중2, Grade 9는 중3, Grade 10은 고1, Grade 11은 고2에 해당하지만 학교마다 편제가 조금씩 달라, 정확히는 학생이 다니는 학교의 학년 기준부터 확인해야 합니다.',
+          'Grade 8·9는 Algebra·Geometry 기초를, Grade 10·11은 Pre-Calculus·Calculus·AP·IB Math로 이어지는 경우가 많습니다. 글로벌스카이는 한국 학년이 아니라 Grade 기준으로 진도를 확인해 그에 맞는 전문 강사를 매칭합니다.',
+        ],
+      },
       {
         h2: '국제학교수학과외',
         paras: [
@@ -241,9 +264,16 @@ const SUBJECTS = [
     h1: '국제학교 영어 과외 — Essay·Literature·TOEFL·IELTS 전문 매칭',
     lede: '내신 Essay·Literature 수업부터 TOEFL·IELTS 같은 공인 영어시험까지, 목적에 맞는 국제학교 영어 과외 강사를 매칭합니다.',
     body: '국제학교 영어 과외는 내신용 Essay·Literature 수업과, 유학·입학에 필요한 TOEFL·IELTS 같은 공인시험 대비가 서로 다른 접근을 필요로 합니다. 목적을 먼저 확인한 뒤 그에 맞는 강사를 매칭합니다.',
-    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS','Grammar','Vocabulary','Reading Comprehension','Rhetorical Analysis'],
+    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS','Grammar','Vocabulary','Reading Comprehension','Rhetorical Analysis','Grade 8 영어','Grade 9 영어','Grade 10 영어','Grade 11 영어'],
     related: ['toefl','ielts','sat-math'],
     extraSections: [
+      {
+        h2: 'Grade 8·9·10·11 영어, 학년별로 다르게 준비합니다',
+        paras: [
+          '국제학교 영어는 한국의 중·고등학교 학년 대신 Grade 8·9·10·11로 구분됩니다. Grade 8·9는 Grammar(그래머)와 기초 Reading Comprehension 중심으로, Grade 10·11로 올라갈수록 Literary Analysis·Argumentative Essay 같은 심화 Writing 비중이 커집니다.',
+          '같은 Grade라도 학교마다 요구하는 Essay 형식과 문학 커리큘럼이 달라, 학생이 다니는 국제학교의 Grade와 커리큘럼을 먼저 확인한 뒤 그에 맞춰 수업을 설계합니다.',
+        ],
+      },
       {
         h2: '국제학교영어과외',
         paras: [
@@ -266,9 +296,16 @@ const SUBJECTS = [
     h1: '국제학교 과학 과외 — AP Physics·Chemistry·Biology 전문 매칭',
     lede: 'AP Physics, AP Chemistry, AP Biology 등 국제학교 과학 커리큘럼에 맞춘 국제학교 과학 과외입니다.',
     body: '국제학교 과학 과목은 계산 중심 단원과 서술형(FRQ) 단원이 함께 출제되는 경우가 많아, 두 유형을 나눠 대비하는 것이 중요합니다. 재학 중인 학교의 트랙(AP Physics 1/2/C 등)을 먼저 확인한 뒤 그에 맞춰 커리큘럼을 짭니다.',
-    tags: ['국제학교 과학','AP Physics','AP Chemistry','AP Biology','Cell Biology','Stoichiometry','Kinematics','Chemical Equilibrium'],
+    tags: ['국제학교 과학','AP Physics','AP Chemistry','AP Biology','Cell Biology','Stoichiometry','Kinematics','Chemical Equilibrium','Grade 8 과학','Grade 9 과학','Grade 10 과학','Grade 11 과학'],
     related: ['ap-physics','ap-chemistry','ap-biology'],
     extraSections: [
+      {
+        h2: 'Grade 8·9·10·11 과학, AP로 이어지는 흐름',
+        paras: [
+          '국제학교 과학도 한국 학년 대신 Grade 8·9·10·11로 구분됩니다. Grade 8·9는 통합과학(Integrated Science) 성격이 강하고, Grade 10부터 Biology·Chemistry·Physics로 과목이 나뉘며 Grade 11·12에서는 AP Physics·AP Chemistry·AP Biology 같은 상급 과정으로 이어지는 경우가 많습니다.',
+          '학생이 다니는 학교의 Grade와 현재 배우는 과목(Biology/Chemistry/Physics)을 먼저 확인한 뒤, 그에 맞는 전문 강사를 매칭합니다.',
+        ],
+      },
       {
         h2: '국제학교과학과외',
         paras: [
