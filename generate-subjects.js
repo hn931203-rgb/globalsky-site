@@ -159,6 +159,12 @@ const SUBJECTS = [
           '채드윅송도국제학교(인천 송도)나 제주국제교육도시(JGEC)의 NLCS Jeju·KIS Jeju·SJA Jeju, 그리고 브랭섬홀아시아처럼 정식 인가를 받은 국제학교는 서류심사와 함께 자체 입학평가(Admission Assessment)를 진행하는 경우가 많습니다. 학교마다 영어·수학 평가시험, MAP Test 등 표준화 시험 점수, 학생 면접·학부모 면담까지 입학방법과 평가 기준이 조금씩 다릅니다.',
           '국내 비인가 국제학교(코리안스쿨)와 정식 인가 국제학교(인터내셔널스쿨)는 학력 인정 방식부터 다르기 때문에, 목표 학교가 정해졌다면 그 학교의 입학평가 구성(서류·시험·인터뷰 비중)부터 정확히 확인한 뒤 준비 계획을 세우는 것이 중요합니다.',
         ],
+        links: [
+          { href: '/schools/chadwick-songdo.html', label: '채드윅송도국제학교 입학평가 안내' },
+          { href: '/schools/nlcs-jeju.html', label: 'NLCS Jeju 입학평가 안내' },
+          { href: '/schools/kis-jeju.html', label: 'KIS Jeju 입학평가 안내' },
+          { href: '/schools/sja-jeju.html', label: 'SJA Jeju 입학평가 안내' },
+        ],
       },
       {
         h2: '국제학교 영어로 배우는 수학·과학 — Algebra·Geometry·AP까지',
@@ -507,7 +513,8 @@ ${HEADER}
 
   ${(s.extraSections || []).map(sec => `<section>
     <h2>${esc(sec.h2)}</h2>
-    <div class="info-card">${sec.paras.map(p => `<p>${esc(p)}</p>`).join('\n    ')}</div>
+    <div class="info-card">${sec.paras.map(p => `<p>${esc(p)}</p>`).join('\n    ')}${sec.links ? `
+    <ul class="tags">${sec.links.map(l => `<li><a href="${esc(l.href)}">${esc(l.label)}</a></li>`).join('')}</ul>` : ''}</div>
   </section>`).join('\n  ')}
 
   <section>
