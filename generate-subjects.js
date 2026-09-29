@@ -288,7 +288,7 @@ const SUBJECTS = [
     h1: '국제학교 영어 과외 — Essay·Literature·TOEFL·IELTS 전문 매칭',
     lede: '내신 Essay·Literature 수업부터 TOEFL·IELTS 같은 공인 영어시험까지, 목적에 맞는 국제학교 영어 과외 강사를 매칭합니다.',
     body: '국제학교 영어 과외는 내신용 Essay·Literature 수업과, 유학·입학에 필요한 TOEFL·IELTS 같은 공인시험 대비가 서로 다른 접근을 필요로 합니다. 목적을 먼저 확인한 뒤 그에 맞는 강사를 매칭합니다.',
-    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS','Grammar','Vocabulary','Reading Comprehension','Rhetorical Analysis','Grade 8 영어','Grade 9 영어','Grade 10 영어','Grade 11 영어'],
+    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS','Grammar','Vocabulary','Reading Comprehension','Rhetorical Analysis','Grade 8 영어','Grade 9 영어','Grade 10 영어','Grade 11 영어','Academic English','GCSE','A-Level','IB English','에세이 첨삭','문학 분석','입학 에세이','미국 국제학교영어공부','영국 국제학교영어공부','캐나다 국제학교영어공부','호주 국제학교영어공부','싱가포르 국제학교영어공부'],
     related: ['toefl','ielts','sat-math'],
     extraSections: [
       {
@@ -310,6 +310,13 @@ const SUBJECTS = [
         paras: [
           '해외학생영어과외는 거주 국가와 재학 중인 학교에 따라 영어 교육과정(미국식·영국식·IB 등)이 달라, 첫 수업 전 지금 쓰고 있는 교재와 커리큘럼부터 확인합니다.',
           '초등 단계에서는 Reading Comprehension과 어휘력 다지기 중심으로, 중·고등에서는 Essay Writing과 Rhetorical Analysis(수사 분석) 중심으로 이어지는 흐름을 학생의 현재 수준에 맞춰 조정합니다.',
+        ],
+      },
+      {
+        h2: 'Academic English — GCSE·A-Level·IB 커리큘럼별 맞춤 지도',
+        paras: [
+          '영국식 커리큘럼(GCSE·A-Level)과 IB는 Academic English를 요구하는 방식이 서로 다릅니다. GCSE English Language·Literature는 정해진 지문 분석과 서술형 답안 형식이 있고, A-Level은 더 깊이 있는 비평적 문학 분석(Literary Analysis)과 독립적인 Coursework를 요구하며, IB English A는 구술 발표(Individual Oral)와 Written Task 등 평가 형식이 다양합니다. 학생이 따르는 커리큘럼부터 확인한 뒤, 그에 맞는 리딩·라이팅·스피킹·문법 훈련으로 수업을 구성합니다.',
+          '내신 대비뿐 아니라 에세이 첨삭(Essay Feedback), 소설·시·희곡 등 문학 분석, 그리고 해외 대학·국제학교 지원 시 필요한 인터뷰 준비와 입학 에세이(Admission Essay) 첨삭까지 함께 지도합니다. 미국·영국·캐나다·호주·싱가포르 등 거주 국가에 관계없이, 재학 중인 학교의 커리큘럼과 평가 일정에 맞춰 온라인 화상 수업으로 진행합니다.',
         ],
       },
     ],
