@@ -172,6 +172,24 @@
   .btn-yellow { background:var(--yellow); color:var(--yellow-ink); }
   .btn-outline { background:#fff; color:var(--ink); }
 
+  /* ===== sticky quick-apply widget ===== */
+  .sticky-apply { display:none; position:fixed; top:50%; right:20px; transform:translateY(-50%); width:230px; z-index:85;
+    background:var(--surface); border:2.5px solid var(--ink); border-radius:16px; padding:18px 16px;
+    box-shadow:5px 5px 0 rgba(0,0,0,.18); max-height:82vh; overflow-y:auto; }
+  .sticky-apply.closed { display:none !important; }
+  .sticky-apply .sa-close { position:absolute; top:8px; right:10px; background:none; border:none; color:var(--ink-faint); font-size:20px; cursor:pointer; line-height:1; }
+  .sticky-apply .sa-title { font-family:var(--font-display); color:var(--ink); font-size:1.05rem; font-weight:700; margin-bottom:4px; }
+  .sticky-apply .sa-sub { font-size:.76rem; color:var(--ink-muted); margin-bottom:14px; }
+  .sticky-apply input { width:100%; padding:9px 10px; margin-bottom:8px; background:var(--surface-2); border:1.5px solid var(--border-strong); color:var(--ink); font-family:var(--font-body); font-size:.82rem; border-radius:8px; }
+  .sticky-apply input::placeholder { color:var(--ink-faint); }
+  .sticky-apply button { width:100%; padding:10px; margin-top:4px; font-size:.86rem; }
+  .sticky-apply .sa-tel { display:block; text-align:center; margin-top:10px; font-size:.76rem; color:var(--ink-muted); text-decoration:none; }
+  .sticky-apply .sa-tel b { color:var(--ink); }
+  .sticky-apply .sa-thanks { display:none; margin-top:10px; padding:10px 12px; background:var(--pink-wash); border:1.5px solid var(--pink); border-radius:8px; color:var(--ink); font-size:.78rem; text-align:center; }
+  .sticky-apply .sa-thanks.show { display:block; }
+  .sticky-apply.submitted > *:not(.sa-thanks) { display:none; }
+  @media (min-width:1280px) { .sticky-apply:not(.closed) { display:block; } }
+
   /* hero — vivid sky illustration */
   .hero { position:relative; overflow:hidden; background:linear-gradient(180deg, var(--sky-deep), var(--sky)); padding-top:clamp(48px,7vw,84px); padding-bottom:clamp(64px,9vw,110px); }
   #view-consulting { position:relative; background:#F8F4F3; }
@@ -964,6 +982,39 @@
   window.addEventListener('hashchange', route);
   route();
 })();
+</script>
+
+<div class="sticky-apply" id="stickyApply">
+  <button type="button" class="sa-close" id="stickyApplyClose" aria-label="닫기">×</button>
+  <div class="sa-title">빠른 상담 신청</div>
+  <div class="sa-sub">이름·연락처만 남겨주시면 순차적으로 연락드립니다</div>
+  <form class="sa-form" id="stickyApplyForm"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdAmjQroAd3h2FrakmbWxq6ngsiqujKadOu8g3g8LNLqiBUdQ/formResponse"
+        method="POST" target="hidden_iframe">
+    <input type="text" name="entry.2005620554" placeholder="학생 이름" required>
+    <input type="text" name="entry.1045781291" placeholder="연락처 (전화번호)" required>
+    <input type="text" name="entry.1065046570" placeholder="지역 / 학년 / 학교" required>
+    <button type="submit" class="btn btn-primary">상담 신청하기</button>
+    <p class="sa-thanks" id="stickyApplyThanks">감사합니다! 접수되었습니다.</p>
+  </form>
+  <a class="sa-tel" href="tel:01083550401">또는 전화 <b>010-8355-0401</b></a>
+</div>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+<script>
+  (function(){
+    var stickyApply = document.getElementById('stickyApply');
+    var closeBtn = document.getElementById('stickyApplyClose');
+    var form = document.getElementById('stickyApplyForm');
+    if (closeBtn) closeBtn.addEventListener('click', function(){ stickyApply.classList.add('closed'); });
+    if (form) form.addEventListener('submit', function(){
+      setTimeout(function(){
+        stickyApply.classList.add('submitted');
+        document.getElementById('stickyApplyThanks').classList.add('show');
+      }, 400);
+    });
+  })();
 </script>
 
 </body>
