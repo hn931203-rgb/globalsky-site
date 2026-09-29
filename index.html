@@ -988,32 +988,15 @@
   <button type="button" class="sa-close" id="stickyApplyClose" aria-label="닫기">×</button>
   <div class="sa-title">빠른 상담 신청</div>
   <div class="sa-sub">이름·연락처만 남겨주시면 순차적으로 연락드립니다</div>
-  <form class="sa-form" id="stickyApplyForm"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdAmjQroAd3h2FrakmbWxq6ngsiqujKadOu8g3g8LNLqiBUdQ/formResponse"
-        method="POST" target="hidden_iframe">
-    <input type="text" name="entry.2005620554" placeholder="학생 이름" required>
-    <input type="text" name="entry.1045781291" placeholder="연락처 (전화번호)" required>
-    <input type="text" name="entry.1065046570" placeholder="지역 / 학년 / 학교" required>
-    <button type="submit" class="btn btn-primary">상담 신청하기</button>
-    <p class="sa-thanks" id="stickyApplyThanks">감사합니다! 접수되었습니다.</p>
-  </form>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAmjQroAd3h2FrakmbWxq6ngsiqujKadOu8g3g8LNLqiBUdQ/viewform?embedded=true" width="100%" height="900" frameborder="0" style="border-radius:8px;">로드 중…</iframe>
   <a class="sa-tel" href="tel:01083550401">또는 전화 <b>010-8355-0401</b></a>
 </div>
-
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
 <script>
   (function(){
     var stickyApply = document.getElementById('stickyApply');
     var closeBtn = document.getElementById('stickyApplyClose');
-    var form = document.getElementById('stickyApplyForm');
     if (closeBtn) closeBtn.addEventListener('click', function(){ stickyApply.classList.add('closed'); });
-    if (form) form.addEventListener('submit', function(){
-      setTimeout(function(){
-        stickyApply.classList.add('submitted');
-        document.getElementById('stickyApplyThanks').classList.add('show');
-      }, 400);
-    });
   })();
 </script>
 
