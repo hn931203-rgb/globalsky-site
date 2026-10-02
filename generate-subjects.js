@@ -51,7 +51,7 @@ const SUBJECTS = [
     h1: 'AP Calculus AB·BC 맞춤과외 — 5점 목표 실전 대비',
     lede: 'AP Calculus AB/BC 시험 범위와 채점 기준(FRQ 서술형 포함)에 맞춘 실전 대비 수업입니다. 학교 내신과 5월 AP 시험 일정을 함께 고려한 커리큘럼을 짭니다.',
     body: 'AP Calculus는 객관식(MCQ)뿐 아니라 풀이 과정을 서술하는 FRQ(Free Response Question) 비중이 높아, 답만 맞히는 연습으로는 고득점이 어렵습니다. 채점 기준(Rubric)에 맞춰 풀이 과정을 서술하는 연습을 함께 진행합니다.',
-    tags: ['AP칼큘러스','AP Calculus AB','AP Calculus BC','FRQ 서술형','5월 AP 시험','Differential Equations','Applications of Integration','Limits and Continuity'],
+    tags: ['AP칼큘러스','AP Calculus AB','AP Calculus BC','AP Precalculus','FRQ 서술형','5월 AP 시험','Differential Equations','Applications of Integration','Limits and Continuity'],
     related: ['math-tutoring','calculus','precalculus','ib-math-aa'],
   },
   {
@@ -235,8 +235,8 @@ const SUBJECTS = [
     h1: '해외수학과외 — 국제학교 수학 과외 · Algebra·Geometry·Pre-Calculus·Calculus·IB·AP 전문 매칭',
     lede: '해외 거주·국내 국제학교 재학 상관없이, 중·고등 해외 수학과외 커리큘럼(Algebra, Geometry, Pre-Calculus, Calculus, IB Math AA/AI, AP Calculus)에 맞춰 과목별 전문 강사를 매칭하는 국제학교 수학 과외입니다.',
     body: '해외수학과외는 국내 수학 학원처럼 학년 단위가 아니라, 학년보다 진도(Course Level)를 기준으로 반이 나뉘는 경우가 많아 같은 학년이라도 배우는 과목명이 서로 다를 수 있습니다. 지금 듣고 있는 과목명을 먼저 확인한 뒤, 그 과목에 맞춘 전문 강사를 매칭해 드립니다.',
-    tags: ['해외수학과외','국제학교 수학','Algebra','Geometry','Pre-Calculus','Calculus','IB Math','AP Calculus','Grade 8 수학','Grade 9 수학','Grade 10 수학','Grade 11 수학'],
-    related: ['algebra','geometry','precalculus','calculus','ap-calculus','ib-math-aa','ib-math-ai'],
+    tags: ['해외수학과외','국제학교 수학','Algebra','Geometry','Pre-Calculus','Calculus','IB Math','AP Calculus','AMC Math','AMC 10','AMC 12','Grade 8 수학','Grade 9 수학','Grade 10 수학','Grade 11 수학'],
+    related: ['algebra','geometry','precalculus','calculus','ap-calculus','ib-math-aa','ib-math-ai','sat-math'],
     extraSections: [
       {
         h2: 'Grade 8·9·10·11 수학, 한국 학년과 헷갈리지 마세요',
@@ -250,6 +250,13 @@ const SUBJECTS = [
         paras: [
           '국제학교수학과외가 한국 학원 수업과 가장 다른 점은 계산 속도보다 개념 이해를 먼저 확인한다는 것입니다. 왜 그 공식이 성립하는지 스스로 설명할 수 있어야 다음 단원으로 넘어가는 방식이라, 국제학교수학과외 수업에서는 답을 맞히는 것보다 풀이 과정을 말로 설명하게 하는 연습을 자주 시킵니다.',
           '국제학교수학과외를 받는 학생 대부분은 문제 유형을 외우기보다, 처음 보는 유형이라도 배운 개념을 응용해 풀어내는 훈련을 합니다. 이 훈련이 쌓이면 시험 범위가 아닌 문제가 나와도 당황하지 않게 됩니다.',
+        ],
+      },
+      {
+        h2: 'AMC Math(미국수학경시대회) 준비',
+        paras: [
+          'AMC 10·12는 미국수학협회(MAA)가 주관하는 수학 경시대회로, 학교 내신이나 SAT Math와는 문제 유형 자체가 다릅니다. 정해진 공식 적용보다 문제를 어떻게 바라보고 접근하는지가 중요해, 기출문제를 유형별로 분석하고 시간 안에 풀어내는 훈련을 반복합니다.',
+          'AMC는 상위권 학생이 해외 대학 입시에서 수학적 역량을 보여주는 용도로도 활용되는 만큼, 학교 수학 진도와 병행해 준비 시기를 조율하는 것이 좋습니다.',
         ],
       },
       {
@@ -358,8 +365,8 @@ const SUBJECTS = [
     name: 'Primary 시험대비',
     h1: 'Primary(초등) 국제학교 시험대비 — Cambridge Checkpoint·ISA·CAT4',
     lede: '국제학교 Primary(초등) 과정은 학기 중간중간 표준화 시험으로 학업 성취도를 점검합니다. Cambridge Primary Checkpoint, ISA(International Schools\' Assessment), CAT4 등 학교마다 채택한 시험 종류가 달라, 재학 중인 학교가 어떤 시험을 보는지부터 확인하고 그에 맞춰 준비합니다.',
-    body: 'Primary 시험대비는 수능이나 내신처럼 등급을 가르는 시험이 아니라, 학생의 현재 학업 수준을 진단하고 다음 학년 배치·학습 계획에 참고하는 성격이 강합니다. Cambridge Primary Checkpoint는 영어·수학·과학 3과목을, ISA와 CAT4는 언어·수리·추론 능력을 폭넓게 평가합니다. 시험 자체보다 학년 수준의 개념을 고르게 다지는 것이 점수 향상의 핵심입니다.',
-    tags: ['Primary 시험대비','Cambridge Primary Checkpoint','ISA 시험','CAT4','초등 국제학교 시험'],
+    body: 'Primary 시험대비는 수능이나 내신처럼 등급을 가르는 시험이 아니라, 학생의 현재 학업 수준을 진단하고 다음 학년 배치·학습 계획에 참고하는 성격이 강합니다. Cambridge Primary Checkpoint는 보통 Year 6(G6) 과정을 마칠 때 영어·수학·과학 3과목으로 치르며, ISA와 CAT4는 언어·수리·추론 능력을 폭넓게 평가합니다. G6 Cambridge Checkpoint 시험준비는 특정 문제 유형을 외우기보다, 학년 수준의 개념을 고르게 다지는 것이 점수 향상의 핵심입니다.',
+    tags: ['Primary 시험대비','Cambridge Primary Checkpoint','G6 Cambridge Checkpoint','ISA 시험','CAT4','초등 국제학교 시험'],
     related: ['map-test','admission-math-test','admission-english-test','math-tutoring'],
   },
   {
@@ -368,7 +375,7 @@ const SUBJECTS = [
     h1: '주재원 자녀 과외 — 해외 거주 학생 전 과목 온라인 매칭',
     lede: '회사 발령으로 해외에 나가 있는 주재원 자녀를 위한 온라인 화상 과외입니다. 현지 학교 커리큘럼에 맞춰 과목별 전문 강사를 매칭하고, 귀국 후 한국 교육과정 적응까지 함께 준비합니다.',
     body: '주재원 자녀는 발령 국가·시기에 따라 다니는 학교의 커리큘럼(IB·AP·영국식·미국식 등)이 제각각이라, 한국의 일반 과외로는 대응이 어려운 경우가 많습니다. 글로벌스카이는 시차를 고려한 화상 수업 시간 조율과 함께, 현지 커리큘럼 이해도가 있는 강사를 매칭합니다.',
-    tags: ['주재원자녀','해외주재원','온라인 화상과외','귀국 후 적응','인도네시아 주재원자녀','자카르타 주재원자녀','싱가포르 주재원자녀','베트남 주재원자녀','중국 주재원자녀','태국 주재원자녀'],
+    tags: ['주재원자녀','해외주재원','온라인 화상과외','귀국 후 적응','주재원가족','주재원가정','인도네시아 주재원자녀','자카르타 주재원자녀','싱가포르 주재원자녀','베트남 주재원자녀','중국 주재원자녀','태국 주재원자녀'],
     related: ['expat-math','expat-english','expat-science'],
     extraSections: [
       {
@@ -385,7 +392,7 @@ const SUBJECTS = [
     h1: '주재원 자녀 수학과외 — 현지 커리큘럼 맞춤 온라인 수업',
     lede: '현지 학교의 수학 커리큘럼(Algebra, IB Math 등)과 한국 수학 교육과정 사이의 진도 차이를 채워주는 주재원 자녀 전용 수학과외입니다.',
     body: '주재원 자녀 수학과외는 현지 커리큘럼을 따라가는 것과, 언젠가 귀국했을 때 한국 수학 진도를 따라잡는 것 두 가지를 함께 고려해야 합니다. 현재 재학 중인 학교의 수학 트랙을 먼저 확인한 뒤, 필요에 따라 두 교육과정을 함께 준비합니다.',
-    tags: ['주재원자녀 수학','주재원자녀수학','현지 커리큘럼','귀국 후 수학'],
+    tags: ['주재원자녀 수학','주재원자녀수학','주재원자녀수학과외','주재원가족','주재원가정','현지 커리큘럼','귀국 후 수학'],
     related: ['expat-child-tutoring','algebra','math-tutoring'],
   },
   {
@@ -403,7 +410,7 @@ const SUBJECTS = [
     h1: '주재원 자녀 과학과외 — 현지 커리큘럼 맞춤 온라인 수업',
     lede: '현지 학교의 과학 커리큘럼(AP Physics/Chemistry/Biology, IB Science 등)에 맞춰 진행하는 주재원 자녀 전용 과학과외입니다.',
     body: '주재원 자녀 과학과외는 현지 학교의 과학 교육과정이 미국식(AP)·영국식(IGCSE/A-Level)·IB 중 무엇을 따르는지에 따라 다루는 단원과 용어가 달라, 재학 중인 학교의 커리큘럼부터 확인한 뒤 수업을 설계합니다. 귀국을 앞둔 가정이라면 한국 과학 교육과정과의 진도 차이도 함께 점검합니다.',
-    tags: ['주재원자녀 과학','주재원자녀과학','현지 커리큘럼','AP Science','IB Science'],
+    tags: ['주재원자녀 과학','주재원자녀과학','주재원자녀과학과외','주재원가족','주재원가정','현지 커리큘럼','AP Science','IB Science'],
     related: ['expat-child-tutoring','science-tutoring','ap-physics'],
   },
   {
