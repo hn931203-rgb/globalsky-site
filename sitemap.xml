@@ -186,6 +186,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://globalsky.kr/subjects/overseas-korean-admission.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://globalsky.kr/subjects/transfer-tutoring.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
