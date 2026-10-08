@@ -295,7 +295,7 @@ const SUBJECTS = [
     h1: '국제학교 영어 과외 — Essay·Literature·TOEFL·IELTS 전문 매칭',
     lede: '내신 Essay·Literature 수업부터 TOEFL·IELTS 같은 공인 영어시험까지, 목적에 맞는 국제학교 영어 과외 강사를 매칭합니다.',
     body: '국제학교 영어 과외는 내신용 Essay·Literature 수업과, 유학·입학에 필요한 TOEFL·IELTS 같은 공인시험 대비가 서로 다른 접근을 필요로 합니다. 목적을 먼저 확인한 뒤 그에 맞는 강사를 매칭합니다.',
-    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS','Grammar','Vocabulary','Reading Comprehension','Rhetorical Analysis','Grade 8 영어','Grade 9 영어','Grade 10 영어','Grade 11 영어','Academic English','GCSE','A-Level','IB English','에세이 첨삭','문학 분석','입학 에세이','미국 국제학교영어공부','영국 국제학교영어공부','캐나다 국제학교영어공부','호주 국제학교영어공부','싱가포르 국제학교영어공부'],
+    tags: ['국제학교 영어','Essay','Literature','TOEFL','IELTS','Grammar','Vocabulary','Reading Comprehension','Rhetorical Analysis','Grade 8 영어','Grade 9 영어','Grade 10 영어','Grade 11 영어','Academic English','GCSE','A-Level','IB English','에세이 첨삭','문학 분석','입학 에세이','영어원서','영어원서 정독','비영어권국제학교','미국 국제학교영어공부','영국 국제학교영어공부','캐나다 국제학교영어공부','호주 국제학교영어공부','싱가포르 국제학교영어공부'],
     related: ['toefl','ielts','sat-math'],
     extraSections: [
       {
@@ -324,6 +324,13 @@ const SUBJECTS = [
         paras: [
           '영국식 커리큘럼(GCSE·A-Level)과 IB는 Academic English를 요구하는 방식이 서로 다릅니다. GCSE English Language·Literature는 정해진 지문 분석과 서술형 답안 형식이 있고, A-Level은 더 깊이 있는 비평적 문학 분석(Literary Analysis)과 독립적인 Coursework를 요구하며, IB English A는 구술 발표(Individual Oral)와 Written Task 등 평가 형식이 다양합니다. 학생이 따르는 커리큘럼부터 확인한 뒤, 그에 맞는 리딩·라이팅·스피킹·문법 훈련으로 수업을 구성합니다.',
           '내신 대비뿐 아니라 에세이 첨삭(Essay Feedback), 소설·시·희곡 등 문학 분석, 그리고 해외 대학·국제학교 지원 시 필요한 인터뷰 준비와 입학 에세이(Admission Essay) 첨삭까지 함께 지도합니다. 미국·영국·캐나다·호주·싱가포르 등 거주 국가에 관계없이, 재학 중인 학교의 커리큘럼과 평가 일정에 맞춰 온라인 화상 수업으로 진행합니다.',
+        ],
+      },
+      {
+        h2: '영어원서 정독 수업 — IGCSE·IB 문학 작품 분석',
+        paras: [
+          'IGCSE·IB 영어 과정은 학년마다 정해진 영어원서를 읽고 문학적으로 분석하는 수업이 많습니다. Of Mice and Men(생쥐와 인간), The Old Man and the Sea(노인과 바다), Pride and Prejudice(오만과 편견), War of the Worlds(우주전쟁)처럼 학교 커리큘럼에서 자주 다루는 고전부터, Frindle·Percy Jackson 시리즈처럼 초·중등 단계에서 즐겨 읽는 영어원서까지, 학년과 읽기 수준에 맞춰 함께 정독하며 줄거리 이해를 넘어 주제·상징·서술 기법을 분석하는 훈련을 합니다.',
+          '영어원서 수업은 단어를 많이 아는 것과 독해력이 느는 것이 비례하지 않는다는 점에서 출발합니다. AR(Accelerated Reader) 지수나 렉사일(Lexile) 지수로 읽기 수준을 확인한 뒤, 학생이 편하게 읽을 수 있는 수준보다 한 단계 높은 원서를 함께 읽으며 질문하고 토론하는 방식으로 독해력을 끌어올립니다.',
         ],
       },
     ],
