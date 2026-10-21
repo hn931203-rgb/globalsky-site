@@ -619,7 +619,7 @@ ${HEADER}
   <div class="mini-cta"><div><h3>${esc(s.name)} 무료 체험수업, 지금 신청하세요</h3><p>학생의 학교와 학년만 말씀해 주셔도 상담을 시작할 수 있습니다.</p></div><a class="btn" href="tel:${TEL}">${TEL_DISPLAY} 전화하기</a></div>
 </div>
 ${FOOTER}
-</body>
+<script src="/alarm.js" defer></script></body>
 </html>`;
 
   fs.writeFileSync(path.join(OUT_DIR, s.slug + '.html'), html, 'utf8');
