@@ -9,6 +9,7 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet" />
 <link rel="apple-touch-icon" sizes="192x192" href="/images/favicon-192.png" />
 <meta name="google-site-verification" content="kDiMo8Hp4GaBI9dM8YeH_tof5Rh7-76WSCDqI1y0D7A" />
 <meta name="naver-site-verification" content="f4c918c1efb2375af92541175a172d1d852e6b8f" />
@@ -196,8 +197,19 @@
   .sticky-apply.submitted > *:not(.sa-thanks) { display:none; }
   @media (min-width:1280px) { .sticky-apply:not(.closed) { display:block; } }
 
-  /* hero — vivid sky illustration */
-  .hero { position:relative; overflow:hidden; background:linear-gradient(180deg, var(--sky-deep), var(--sky)); padding-top:clamp(48px,7vw,84px); padding-bottom:clamp(64px,9vw,110px); }
+  /* hero — premium photo */
+  .hero {
+    position:relative; overflow:hidden;
+    background-image: linear-gradient(180deg, rgba(8,14,28,.55) 0%, rgba(8,14,28,.62) 45%, rgba(8,14,28,.95) 100%), url('images/new-photos/nz-field.png');
+    background-size: cover; background-position: center 38%;
+    padding-top:clamp(64px,8vw,96px); padding-bottom:clamp(64px,9vw,110px);
+  }
+  .hero .pill-label { background:rgba(8,14,28,.55); color:#f3efe3; border:1px solid rgba(200,168,75,.55); letter-spacing:.08em; }
+  .hero h1 { font-family:'Noto Serif KR', var(--font-display); font-weight:700; }
+  .hero h1 .hero-line1 { color:#f3efe3; }
+  .hero h1 .hero-line2 { color:#d8b45c; }
+  .hero .cta-row .btn-yellow { background:#c8a84b; color:#1a1406; border-color:#c8a84b; }
+  .hero .cta-row .btn-outline { background:rgba(255,255,255,.06); color:#f3efe3; border-color:rgba(243,239,227,.55); }
   #view-consulting { position:relative; background:#F8F4F3; }
   #view-consulting::before { content:""; position:absolute; top:0; left:0; right:0; height:8px; background:linear-gradient(90deg, #7A1F1F, #B5453D); z-index:0; }
   #view-consulting .fact-card { background:#F4E4E7; border-color:#DCBAC0; }
@@ -216,28 +228,20 @@
   #view-camp::before { content:""; position:absolute; top:0; left:0; right:0; height:520px; background-image:url('images/camp-life-3.jpg'); background-size:cover; background-position:center 25%; opacity:.4; filter:blur(1.5px); z-index:0; }
   #view-camp::after { content:""; position:absolute; top:0; left:0; right:0; height:520px; background:linear-gradient(180deg, color-mix(in srgb, var(--bg) 30%, transparent), var(--bg) 96%); z-index:0; }
   #view-camp > .wrap { position:relative; z-index:1; }
-  .hero-clouds { position:absolute; inset:0; pointer-events:none; }
   .hero-inner { position:relative; }
-  .hero .pill-label { background:rgba(255,255,255,.92); }
-  .hero h1 { font-size:clamp(3.3rem,9.5vw,6.6rem); line-height:1.12; margin-top:22px; letter-spacing:-0.02em; }
-  .hero .lede { margin-top:18px; font-size:1.12rem; color:#fff; max-width:56ch; font-weight:600; text-shadow:0 2px 6px rgba(0,0,0,.25); }
+  .hero h1 { font-size:clamp(2.6rem,7vw,4.8rem); line-height:1.22; margin-top:22px; letter-spacing:-0.01em; }
+  .hero .lede { margin-top:18px; font-size:1.12rem; color:#e4e1d6; max-width:56ch; font-weight:500; text-shadow:0 2px 6px rgba(0,0,0,.3); }
   .hero .cta-row { margin-top:26px; display:flex; flex-wrap:wrap; gap:14px; }
-  .hero-illus { margin-top:8px; }
-  .hero-illus svg { width:100%; height:auto; display:block; }
 
   /* winter banner */
-  .winter-banner { position:relative; overflow:hidden; border-radius:24px; margin-top:-40px; border:3px solid var(--ink); background:linear-gradient(135deg, #C7ECFB, #E9FAC9 75%); text-decoration:none; display:block; box-shadow:5px 5px 0 rgba(0,0,0,.15); }
-  .winter-banner .wb-bg { position:absolute; inset:0; width:100%; height:100%; opacity:.7; }
+  .winter-banner { position:relative; overflow:hidden; border-radius:18px; margin-top:-40px; background:linear-gradient(135deg, #10192e, #1a2744); text-decoration:none; display:block; border:1px solid rgba(200,168,75,.3); }
   .winter-banner .wb-content { position:relative; z-index:1; padding:clamp(24px,4vw,38px); }
-  .winter-banner .wb-eyebrow { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-display); font-weight:700; font-size:.84rem; background:var(--red); color:#fff; border:2px solid var(--ink); padding:6px 14px; border-radius:999px; }
-  .winter-banner h2 { font-size:clamp(1.5rem,3.4vw,2.15rem); margin-top:14px; background:linear-gradient(100deg, var(--pink) 30%, #fff 50%, var(--pink) 70%); background-size:250% auto; -webkit-background-clip:text; background-clip:text; color:transparent; filter:drop-shadow(2px 3px 0 rgba(255,255,255,.7)); animation:text-shine 2.8s linear infinite; }
-  @keyframes text-shine { to { background-position:-250% center; } }
-  .winter-banner p { margin-top:8px; color:var(--ink); font-weight:700; font-size:1rem; }
+  .winter-banner .wb-eyebrow { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-display); font-weight:700; font-size:.8rem; letter-spacing:.06em; color:#c8a84b; }
+  .winter-banner h2 { font-family:'Noto Serif KR', var(--font-display); font-size:clamp(1.4rem,3.2vw,1.95rem); margin-top:10px; color:#f3efe3; }
+  .winter-banner p { margin-top:8px; color:#c3c8d4; font-weight:500; font-size:1rem; }
   .winter-banner .wb-tags { margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; }
-  .winter-banner .wb-tags span { background:#fff; border:2px solid var(--ink); border-radius:999px; padding:5px 12px; font-weight:700; font-size:.82rem; color:var(--ink); }
-  .winter-banner .wb-cta { margin-top:18px; display:inline-flex; align-items:center; gap:8px; background:var(--pink); color:#fff; font-family:var(--font-display); font-weight:700; font-size:.94rem; padding:11px 22px; border-radius:999px; border:2px solid var(--ink); }
-  .winter-banner .sparkle { position:absolute; z-index:1; pointer-events:none; animation:sparkle-twinkle 2.4s ease-in-out infinite; }
-  @keyframes sparkle-twinkle { 0%,100% { opacity:0; transform:scale(.3) rotate(0deg); } 50% { opacity:1; transform:scale(1) rotate(20deg); } }
+  .winter-banner .wb-tags span { background:rgba(255,255,255,.06); border:1px solid rgba(200,168,75,.3); border-radius:999px; padding:5px 12px; font-weight:600; font-size:.82rem; color:#e4e1d6; }
+  .winter-banner .wb-cta { margin-top:18px; display:inline-flex; align-items:center; gap:8px; background:#c8a84b; color:#1a1406; font-family:var(--font-display); font-weight:700; font-size:.94rem; padding:11px 22px; border-radius:999px; }
 
   .trust { padding:56px 0 4px; }
   .trust-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
@@ -444,35 +448,9 @@
 <main>
 
   <section class="hero">
-    <svg class="hero-clouds" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff" opacity=".9">
-        <g transform="translate(120,70)"><circle r="26"/><circle cx="30" cy="6" r="20"/><circle cx="-28" cy="8" r="18"/><rect x="-40" y="4" width="96" height="22" rx="11"/></g>
-        <g transform="translate(950,110) scale(0.8)" opacity=".85"><circle r="26"/><circle cx="30" cy="6" r="20"/><circle cx="-28" cy="8" r="18"/><rect x="-40" y="4" width="96" height="22" rx="11"/></g>
-        <g transform="translate(1080,320) scale(0.6)" opacity=".7"><circle r="26"/><circle cx="30" cy="6" r="20"/><circle cx="-28" cy="8" r="18"/><rect x="-40" y="4" width="96" height="22" rx="11"/></g>
-      </g>
-      <g opacity=".55">
-        <circle cx="200" cy="230" r="3" fill="#fff"/><circle cx="260" cy="180" r="2" fill="#fff"/><circle cx="1000" cy="60" r="2.5" fill="#fff"/>
-      </g>
-      <!-- globe -->
-      <g transform="translate(1010,220)">
-        <circle r="58" fill="#4FCB8D" stroke="#1A1A1A" stroke-width="3"/>
-        <ellipse rx="58" ry="22" fill="none" stroke="#1A1A1A" stroke-width="2" opacity=".4"/>
-        <ellipse rx="22" ry="58" fill="none" stroke="#1A1A1A" stroke-width="2" opacity=".4"/>
-        <circle cx="-18" cy="-14" r="6" fill="#FF2D87" stroke="#1A1A1A" stroke-width="2"/>
-        <circle cx="22" cy="18" r="6" fill="#FFD400" stroke="#1A1A1A" stroke-width="2"/>
-      </g>
-      <!-- plane -->
-      <g transform="translate(230,300) rotate(-10)">
-        <ellipse cx="46" cy="12" rx="46" ry="15" fill="#fff" stroke="#1A1A1A" stroke-width="3"/>
-        <polygon points="46,12 82,-20 92,-10 62,12" fill="#fff" stroke="#1A1A1A" stroke-width="3" stroke-linejoin="round"/>
-        <polygon points="46,12 82,44 92,34 62,12" fill="#fff" stroke="#1A1A1A" stroke-width="3" stroke-linejoin="round"/>
-        <polygon points="2,12 -14,-4 -14,20" fill="#fff" stroke="#1A1A1A" stroke-width="3" stroke-linejoin="round"/>
-        <circle cx="74" cy="12" r="4" fill="#2E7FC4"/>
-      </g>
-    </svg>
     <div class="wrap hero-inner">
-      <span class="pill-label">✈️ STUDY ABROAD CAMP · INTERNATIONAL SCHOOL</span>
-      <h1><span class="outline-text">청소년 해외캠프</span><br><span class="hl-yellow">국내&amp;국외 국제학교 커리큘럼 수업</span></h1>
+      <span class="pill-label">GLOBAL SKY · STUDY ABROAD &amp; INTERNATIONAL SCHOOL</span>
+      <h1><span class="hero-line1">청소년 해외캠프</span><br><span class="hero-line2">국내&amp;국외 국제학교 커리큘럼 수업</span></h1>
       <p class="lede">글로벌스카이는 국내·국외 전 세계 국제학교 재학생을 위한 학습 중심 관리 스터디입니다. 학교별 커리큘럼에 100% 맞춰 수업을 진행하며 입학 준비 및 대입 수업까지 지원합니다. MAP Test, TOEFL, IELTS, Duolingo, SAT, AP, IB, Algebra, Geometry, Precalculus, Essay, Physics, Biology 등 전 과목을 다루며, 국내 국제학교 입학 준비는 대치 세인트폴 아카데미 입학 컨설팅으로 지원하고 있습니다.</p>
       <div class="cta-row">
         <a class="btn btn-yellow" href="tel:01083550401">전화로 상담 신청 · 010-8355-0401</a>
@@ -483,22 +461,6 @@
 
   <div class="wrap">
     <a class="winter-banner" href="#camp" data-nav>
-      <svg class="wb-bg" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <g fill="#fff" opacity=".85">
-          <g transform="translate(140,50)"><circle r="20"/><circle cx="24" cy="4" r="15"/><circle cx="-22" cy="6" r="14"/><rect x="-32" y="2" width="76" height="18" rx="9"/></g>
-          <g transform="translate(1030,60) scale(0.85)"><circle r="20"/><circle cx="24" cy="4" r="15"/><circle cx="-22" cy="6" r="14"/><rect x="-32" y="2" width="76" height="18" rx="9"/></g>
-        </g>
-        <g transform="translate(950,150) rotate(-12)">
-          <ellipse cx="30" cy="8" rx="30" ry="10" fill="#fff" stroke="#1A1A1A" stroke-width="2"/>
-          <polygon points="30,8 54,-14 61,-7 41,8" fill="#fff" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
-          <polygon points="30,8 54,30 61,23 41,8" fill="#fff" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
-        </g>
-      </svg>
-      <span class="sparkle" style="top:12%; left:8%; font-size:1.3rem; animation-delay:0s;">✨</span>
-      <span class="sparkle" style="top:22%; left:88%; font-size:1.6rem; animation-delay:.6s;">✨</span>
-      <span class="sparkle" style="top:68%; left:92%; font-size:1.1rem; animation-delay:1.2s;">✨</span>
-      <span class="sparkle" style="top:78%; left:5%; font-size:1.4rem; animation-delay:1.8s;">✨</span>
-      <span class="sparkle" style="top:45%; left:96%; font-size:1rem; animation-delay:.9s;">✨</span>
       <div class="wb-content">
         <span class="wb-eyebrow">❄️ NOTICE</span>
         <h2>2027 겨울캠프 등록 시작</h2>
