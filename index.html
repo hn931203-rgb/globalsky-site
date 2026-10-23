@@ -113,13 +113,13 @@
     --green: #FFFFFF;
     --red: #7A2F2F;
 
-    --card-blue: #FFFFFF;
+    --card-blue: #EEF1F7;
     --card-white: #FFFFFF;
-    --card-pink: #FBF9F4;
+    --card-pink: #F6EFDC;
     --card-yellow: #FFFFFF;
-    --card-green: #FBF9F4;
-    --card-purple: #FFFFFF;
-    --card-peach: #FBF9F4;
+    --card-green: #EEF1F7;
+    --card-purple: #F6EFDC;
+    --card-peach: #FFFFFF;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -149,6 +149,8 @@
 
   /* icon chip */
   .sticker { width:48px; height:48px; border-radius:12px; background:var(--pink-wash); border:1px solid var(--border-strong); display:flex; align-items:center; justify-content:center; font-size:1.35rem; flex:none; }
+  .sticker.rot-a { background:var(--navy); border-color:var(--navy); }
+  .sticker.rot-b { background:#F6EFDC; border-color:rgba(200,168,75,.4); }
   .flag-ic { height:1em; width:auto; vertical-align:-0.15em; border-radius:3px; box-shadow:0 0 0 1px rgba(0,0,0,.18); margin-right:.28em; display:inline-block; }
   .sticker .flag-ic { height:26px; width:auto; margin-right:0; box-shadow:0 0 0 1px rgba(0,0,0,.18); border-radius:5px; }
 
@@ -258,15 +260,15 @@
 
   .cat-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
   @media (max-width:880px){ .cat-grid { grid-template-columns:repeat(2,1fr);} }
-  .cat-card { display:flex; flex-direction:column; gap:10px; background:#fff; border:1px solid var(--border-strong); border-radius:16px; padding:22px; text-decoration:none; color:var(--ink); transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; cursor:pointer; }
-  .cat-card:hover { transform:translateY(-2px); border-color:rgba(200,168,75,.5); box-shadow:0 10px 24px rgba(13,18,38,.1); }
-  .cat-card:nth-child(1) { background:var(--card-white); }
-  .cat-card:nth-child(2) { background:var(--card-pink); }
-  .cat-card:nth-child(3) { background:var(--card-yellow); }
-  .cat-card:nth-child(4) { background:var(--card-green); }
-  .cat-card:nth-child(5) { background:var(--card-purple); }
-  .cat-card:nth-child(6) { background:var(--card-peach); }
-  .cat-card:nth-child(7) { background:var(--card-white); }
+  .cat-card { display:flex; flex-direction:column; gap:10px; background:#fff; border:1px solid var(--border-strong); border-top:3px solid var(--navy); border-radius:12px; padding:22px; text-decoration:none; color:var(--ink); transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; cursor:pointer; }
+  .cat-card:hover { transform:translateY(-2px); border-color:rgba(200,168,75,.5); border-top-color:var(--yellow); box-shadow:0 10px 24px rgba(13,18,38,.1); }
+  .cat-card:nth-child(1) { background:var(--card-white); border-top-color:var(--navy); }
+  .cat-card:nth-child(2) { background:var(--card-pink); border-top-color:var(--yellow); }
+  .cat-card:nth-child(3) { background:var(--card-yellow); border-top-color:var(--navy); }
+  .cat-card:nth-child(4) { background:var(--card-green); border-top-color:var(--yellow); }
+  .cat-card:nth-child(5) { background:var(--card-purple); border-top-color:var(--navy); }
+  .cat-card:nth-child(6) { background:var(--card-peach); border-top-color:var(--yellow); }
+  .cat-card:nth-child(7) { background:var(--card-white); border-top-color:var(--navy); }
   .cat-card h3 { font-size:1.14rem; margin-top:2px; }
   .cat-card p { color:var(--ink); font-weight:600; font-size:.92rem; }
   .cat-card .cc-more { margin-top:4px; font-family:var(--font-display); font-weight:700; font-size:.86rem; color:var(--pink); }
@@ -300,11 +302,11 @@
   .subject-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
   @media (max-width:880px){ .subject-grid{ grid-template-columns:repeat(2,1fr);} }
   @media (max-width:560px){ .subject-grid{ grid-template-columns:1fr;} }
-  .subject-card { background:#fff; border:2px solid var(--border-strong); border-radius:16px; padding:20px; }
-  .subject-card:nth-child(4n+1) { background:var(--card-white); }
-  .subject-card:nth-child(4n+2) { background:var(--card-pink); }
-  .subject-card:nth-child(4n+3) { background:var(--card-yellow); }
-  .subject-card:nth-child(4n+4) { background:var(--card-green); }
+  .subject-card { background:#fff; border:1px solid var(--border-strong); border-top:3px solid var(--navy); border-radius:12px; padding:20px; }
+  .subject-card:nth-child(4n+1) { background:var(--card-white); border-top-color:var(--navy); }
+  .subject-card:nth-child(4n+2) { background:var(--card-pink); border-top-color:var(--yellow); }
+  .subject-card:nth-child(4n+3) { background:var(--card-yellow); border-top-color:var(--navy); }
+  .subject-card:nth-child(4n+4) { background:var(--card-green); border-top-color:var(--yellow); }
   .subject-card h3 { font-size:1.02rem; margin-top:12px; }
   .subject-card .tags { margin-top:10px; display:flex; flex-wrap:wrap; gap:6px; padding:0; list-style:none; }
   .subject-card .tags li { font-size:.76rem; font-weight:600; background:var(--surface-2); color:var(--ink-muted); border-radius:999px; padding:4px 9px; }
@@ -317,13 +319,13 @@
   .card-grid.cols-3 { grid-template-columns:repeat(3,1fr); }
   @media (max-width:880px) { .card-grid { grid-template-columns:repeat(2,1fr); } }
   @media (max-width:560px) { .card-grid, .card-grid.cols-2, .card-grid.cols-3 { grid-template-columns:1fr; } }
-  .pop-card { background:#fff; border:2px solid var(--border-strong); border-radius:16px; padding:20px; }
-  .pop-card:nth-child(6n+1) { background:var(--card-white); }
-  .pop-card:nth-child(6n+2) { background:var(--card-pink); }
-  .pop-card:nth-child(6n+3) { background:var(--card-yellow); }
-  .pop-card:nth-child(6n+4) { background:var(--card-green); }
-  .pop-card:nth-child(6n+5) { background:var(--card-purple); }
-  .pop-card:nth-child(6n+6) { background:var(--card-peach); }
+  .pop-card { background:#fff; border:1px solid var(--border-strong); border-left:3px solid var(--navy); border-radius:12px; padding:20px; }
+  .pop-card:nth-child(6n+1) { background:var(--card-white); border-left-color:var(--navy); }
+  .pop-card:nth-child(6n+2) { background:var(--card-pink); border-left-color:var(--yellow); }
+  .pop-card:nth-child(6n+3) { background:var(--card-yellow); border-left-color:var(--navy); }
+  .pop-card:nth-child(6n+4) { background:var(--card-green); border-left-color:var(--yellow); }
+  .pop-card:nth-child(6n+5) { background:var(--card-purple); border-left-color:var(--navy); }
+  .pop-card:nth-child(6n+6) { background:var(--card-peach); border-left-color:var(--yellow); }
   .pop-card.dashed { background:transparent; }
   .pop-card h3 { font-size:1rem; margin-top:12px; }
   .pop-card p { margin-top:8px; color:var(--ink); font-weight:600; font-size:.92rem; }
@@ -968,6 +970,7 @@
     <input type="text" name="entry.2005620554" placeholder="학생 이름" required>
     <input type="text" name="entry.1045781291" placeholder="연락처 (전화번호)" required>
     <input type="text" name="entry.1065046570" placeholder="지역 / 학년 / 학교" required>
+    <input type="text" name="entry.839337160" placeholder="카카오톡 또는 위챗 아이디 (해외 거주 시)">
     <button type="submit" class="btn btn-primary">상담 신청하기</button>
     <p class="sa-thanks" id="stickyApplyThanks">감사합니다! 접수되었습니다.</p>
   </form>
